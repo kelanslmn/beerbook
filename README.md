@@ -1,6 +1,9 @@
 # beer is  babe
 
-> beerhey
+yo les kehs, 
+
+
+voici une page ou vous pouvez comparer les binches!!
 
 ## Build Setup
 
