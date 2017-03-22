@@ -1,6 +1,6 @@
 # beer is  bae
 
-> beer
+> beerhey
 
 ## Build Setup
 
