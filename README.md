@@ -1,10 +1,4 @@
-# beer is  babe
-
-yo les kehs, 
-
-
-voici une page ou vous pouvez comparer les binches!!
-salut
+#Voici le readme pour les bières
 
 ## Build Setup
 
