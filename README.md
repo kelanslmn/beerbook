@@ -1,5 +1,4 @@
 # Voici le readme pour les bières
 
 ## Bienvenue
-### Votez pour vos bieres preferes
-
+### Votez pour vos bières preferes
