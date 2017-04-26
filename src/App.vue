@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-
+coucou
   </div>
 </template>
 
@@ -25,7 +25,7 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 
-  background-image: url(http://dreamicus.com/data/beer/beer-08.jpg);
+  background-image: url("http://dreamicus.com/data/beer/beer-08.jpg");
 }
 
 </style>
