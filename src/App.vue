@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-coucou
+##coucou
   </div>
 </template>
 
