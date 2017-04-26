@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-
+<div id="description">
+<p1>Bienvenue sur le site de revue de bière par excellence "Beerbook"! Pour en apprendre plus ou partager ton expérience sur cette boisson, visites nos différentes pages.</p1>
+</div>
   </div>
 </template>
 
