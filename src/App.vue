@@ -1,7 +1,12 @@
 <template>
   <div id="app">
-##coucou
+  <br/>
+     <h1 id="titre"> BeerBook </h1>
+ésdflkjsdéflkjdsf
   </div>
+
+
+
 </template>
 
 <script>
@@ -26,6 +31,17 @@ export default {
   margin-top: 60px;
 
   background-image: url("http://dreamicus.com/data/beer/beer-08.jpg");
+  background-attachment:fixed;
+}
+
+#titre {
+	font-family: Segoe;
+	font-size: 100px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 26.4px;
+
 }
 
 </style>
