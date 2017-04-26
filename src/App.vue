@@ -2,7 +2,6 @@
   <div id="app">
   <br/>
      <h1 id="titre"> BeerBook </h1>
-ésdflkjsdéflkjdsf
   </div>
 
 
@@ -40,7 +39,7 @@ export default {
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
-	line-height: 26.4px;
+	line-height:100px;
 
 }
 
