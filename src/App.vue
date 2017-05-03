@@ -2,7 +2,11 @@
   <div id="app">
   <br/>
      <h1 id="titre"> BeerBook </h1>
+
+     <input id="search" type="text" name="search" placeholder="Recherchez..">
+
   </div>
+
 
 
 
@@ -41,6 +45,19 @@ export default {
 	font-weight: 400;
 	line-height:100px;
 
+}
+#search{
+
+background-image: url('assets/recherche.png');
+width: 200px;
+box-sizing: border-box;
+font-size: 20px;
+background-position: 5px 5px;
+background-repeat: no-repeat;
+background-size: 12% auto;
+padding: 5px 0px 5px 40px;
+border-radius: 10px;
+border: 3px solid #ccc;
 }
 
 </style>
