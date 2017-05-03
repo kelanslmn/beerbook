@@ -2,6 +2,7 @@
   <div id="app">
   <br/>
      <h1 id="titre"> BeerBook </h1>
+     <h2 id="description"> Bienvenue sur la page "Beerbook"! Ce site héberge des revues de bières afin de vous en apprendre plus et de partager votre savoir sur cette boisson. N'hésitez pas à partager et laisser des commentaires! </h2>
   </div>
 
 
