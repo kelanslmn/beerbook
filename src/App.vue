@@ -75,6 +75,6 @@ position: relative; bottom: 173pt;  height: 50px; left: 450pt;
 #logo {
   position: relative; bottom:170pt; right:330pt;
   height: 250px ;
-
-
 }
+
+</style>
