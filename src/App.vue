@@ -1,10 +1,16 @@
 <template>
   <div id="app">
-  <br/>
+
      <h1 id="titre"> BeerBook </h1>
 
      <input id="search" type="text" name="search" placeholder="Recherchez..">
 
+
+     <h2 id="description"> Bienvenue sur la page "Beerbook"! Ce site héberge des revues de bières afin de vous en apprendre plus et de partager votre savoir sur cette boisson. N'hésitez pas à partager et laisser des commentaires! </h2>
+<img src="https://lh3.googleusercontent.com/aYbdIM1abwyVSUZLDKoE0CDZGRhlkpsaPOg9tNnBktUQYsXflwknnOn2Ge1Yr7rImGk=w300" id="instagram" />
+<div id="réseau sociaux">
+<a id=""></a>
+</div>
   </div>
 
 
@@ -57,7 +63,10 @@ background-repeat: no-repeat;
 background-size: 12% auto;
 padding: 5px 0px 5px 40px;
 border-radius: 10px;
-border: 3px solid #ccc;
+border: 3px solid #ccc;}
+
+#instagram {
+position: relative; bottom: 173pt;  height: 50px; left: 450pt;
 }
 
 </style>
