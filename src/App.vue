@@ -4,6 +4,7 @@
      <h1 id="titre"> BeerBook </h1>
      <h2 id="description"> Bienvenue sur la page "Beerbook"! Ce site héberge des revues de bières afin de vous en apprendre plus et de partager votre savoir sur cette boisson. N'hésitez pas à partager et laisser des commentaires! </h2>
 <img src="https://lh3.googleusercontent.com/aYbdIM1abwyVSUZLDKoE0CDZGRhlkpsaPOg9tNnBktUQYsXflwknnOn2Ge1Yr7rImGk=w300" id="instagram" />
+<img src="http://www.redpostmedia.co.uk/wp-content/uploads/2015/11/gmail-logo-1-01.png" id="mail" />
 <div id="réseau sociaux">
 <a id=""></a>
 </div>
@@ -48,7 +49,10 @@ export default {
 
 }
 #instagram {
-position: relative; bottom: 173pt;  height: 50px; left: 450pt;
+position: relative; bottom: 173pt;  height: 45px; left: 450pt;
+}
+#mail {
+position: relative; bottom: 175pt;  height: 40px; left: 370pt;
 }
 
 </style>
