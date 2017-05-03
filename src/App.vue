@@ -2,6 +2,7 @@
   <div id="app">
 
      <h1 id="titre"> BeerBook </h1>
+  <img src= "src/assets/beerbook.png" id= "logo"/>
 
      <input id="search" type="text" name="search" placeholder="Recherchez..">
 
@@ -69,4 +70,11 @@ border: 3px solid #ccc;}
 position: relative; bottom: 173pt;  height: 50px; left: 450pt;
 }
 
+
+#logo {
+  position: relative; bottom:170pt; right:330pt;
+  height: 250px ;
+
+
+}
 </style>
