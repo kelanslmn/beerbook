@@ -2,6 +2,9 @@
   <div id="app">
   <br/>
      <h1 id="titre"> BeerBook </h1>
+  <img src= "src/assets/beerbook.png" id= "logo"/>
+
+
   </div>
 
 
@@ -31,6 +34,7 @@ export default {
 
   background-image: url("http://dreamicus.com/data/beer/beer-08.jpg");
   background-attachment:fixed;
+
 }
 
 #titre {
@@ -43,4 +47,11 @@ export default {
 
 }
 
-</style>
+#logo {
+  position: relative; bottom:170pt; right:330pt;
+  height: 250px ;
+
+
+}
+
+  </style>
