@@ -1,23 +1,25 @@
 <template>
   <div id="app">
 
-     <h1 id="titre"> BeerBook </h1>
-  <img src= "src/assets/beerbook.png" id= "logo"/>
+    <h1 id="titre"> BeerBook </h1>
 
-     <input id="search" type="text" name="search" placeholder="Recherchez..">
+    <img src= "src/assets/beerbook.png" id= "logo"/>
+
+    <input id="search" type="text" name="search" placeholder="Recherchez..">
 
 
-     <h2 id="description"> Bienvenue sur la page "Beerbook"! Ce site héberge des revues de bières afin de vous en apprendre plus et de partager votre savoir sur cette boisson. N'hésitez pas à partager et laisser des commentaires! </h2>
-<img src="https://lh3.googleusercontent.com/aYbdIM1abwyVSUZLDKoE0CDZGRhlkpsaPOg9tNnBktUQYsXflwknnOn2Ge1Yr7rImGk=w300" id="instagram" />
-<div id="réseau sociaux">
-<a id=""></a>
-</div>
+    <h2 id="description"> Bienvenue sur la page "Beerbook"! Ce site héberge des revues de bières afin de vous en apprendre plus et de partager votre savoir sur cette boisson. N'hésitez pas à partager et laisser des commentaires! </h2>
+
+    <div id="resau_sociaux">
+      <a id=""></a>
+      <img src="src/assets/instagram.png" id="instagram" />
+    </div>
+
   </div>
 
-
-
-
 </template>
+
+
 
 <script>
 export default {
@@ -30,18 +32,18 @@ export default {
 }
 </script>
 
+
+
 <style>
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 
-  background-image: url("http://dreamicus.com/data/beer/beer-08.jpg");
-  background-attachment:fixed;
+  background-image: url("assets/background.jpg");
 
 }
 
@@ -67,14 +69,20 @@ padding: 5px 0px 5px 40px;
 border-radius: 10px;
 border: 3px solid #ccc;}
 
-#instagram {
-position: relative; bottom: 173pt;  height: 50px; left: 450pt;
-}
+
 
 
 #logo {
-  position: relative; bottom:170pt; right:330pt;
-  height: 250px ;
+  position: absolute; top: 20px; left: 20px;
+  height: 200px ;
+}
+
+#resau_sociaux {
+  position: fixed; right: 10px; top: 10px;
+}
+
+#instagram {
+  height: 30px;
 }
 
 </style>
