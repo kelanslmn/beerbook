@@ -1,23 +1,27 @@
 <template>
   <div id="app">
 
-     <h1 id="titre"> BeerBook </h1>
-  <img src= "src/assets/beerbook.png" id= "logo"/>
+    <h1 id="titre">BeerBook</h1>
 
-     <input id="search" type="text" name="search" placeholder="Recherchez..">
+    <img src= "src/assets/beerbook.png" id= "logo"/>
 
+    <form>
+      <input id="search" type="text" name="search" placeholder="Recherchez ...">
+      <button id="button" type="button">Recherche</button>
+    </form>
 
-     <h2 id="description"> Bienvenue sur la page "Beerbook"! Ce site héberge des revues de bières afin de vous en apprendre plus et de partager votre savoir sur cette boisson. N'hésitez pas à partager et laisser des commentaires! </h2>
-<img src="https://lh3.googleusercontent.com/aYbdIM1abwyVSUZLDKoE0CDZGRhlkpsaPOg9tNnBktUQYsXflwknnOn2Ge1Yr7rImGk=w300" id="instagram" />
-<div id="réseau sociaux">
-<a id=""></a>
-</div>
+    <h2 id="description"> Bienvenue sur la page "Beerbook"! Ce site héberge des revues de bières afin de vous en apprendre plus et de partager votre savoir sur cette boisson. N'hésitez pas à partager et laisser des commentaires! </h2>
+
+    <div id="resau_sociaux">
+      <a id=""></a>
+      <img src="src/assets/instagram.png" id="instagram" />
+    </div>
+
   </div>
 
-
-
-
 </template>
+
+
 
 <script>
 export default {
@@ -30,51 +34,82 @@ export default {
 }
 </script>
 
+
+
 <style>
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  background-image: url("assets/background.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 
-  background-image: url("http://dreamicus.com/data/beer/beer-08.jpg");
-  background-attachment:fixed;
+
+
 
 }
 
 #titre {
-	font-family: Segoe;
-	font-size: 100px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height:100px;
+  font-family: Segoe;
+  font-size: 100px;
+  margin-top: -10px;
+  font-weight: 400;
+  line-height: 100px;
+  padding-top: 50px;
 
 }
+
+form{
+  margin-left:auto;
+  margin-right:auto;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 5px solid #ccc;
+  width: 500px;
+}
+
 #search{
+  background-image: url('assets/recherche.png');
+  font-size: 20px;
+  background-position: 5px 2px;
+  background-repeat: no-repeat;
+  background-size: 8% auto;
+  padding: 6px 0px 6px 45px;
+  margin-left: 0px;
+  width: 70%;
+  border: none;
+  border-radius: 5px 0px 0px 5px;
 
-background-image: url('assets/recherche.png');
-width: 200px;
-box-sizing: border-box;
-font-size: 20px;
-background-position: 5px 5px;
-background-repeat: no-repeat;
-background-size: 12% auto;
-padding: 5px 0px 5px 40px;
-border-radius: 10px;
-border: 3px solid #ccc;}
 
-#instagram {
-position: relative; bottom: 173pt;  height: 50px; left: 450pt;
 }
+
+#button{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 8px 5px 6px 5px;
+  text-align: center;
+  font-size: 18px;
+  width: auto;
+  border-radius: 0px 5px 5px 0px;
+
+}
+
 
 
 #logo {
-  position: relative; bottom:170pt; right:330pt;
-  height: 250px ;
+  position: absolute; top: 20px; left: 20px;
+  height: 200px ;
+}
+
+#resau_sociaux {
+  position: fixed; right: 10px; top: 10px;
+}
+
+#instagram {
+  height: 30px;
 }
 
 </style>
