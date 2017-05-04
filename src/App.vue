@@ -76,24 +76,24 @@ form{
   background-position: 5px 2px;
   background-repeat: no-repeat;
   background-size: 8% auto;
-  padding: 6px 0px 6px 9%;
+  padding: 6px 0px 6px 45px;
   margin-left: 0px;
   width: 70%;
   border: none;
-  border-radius: 5px;
+  border-radius: 5px 0px 0px 5px;
 
 
 }
 
 #button{
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50;
   border: none;
   color: white;
-  padding: 8px 0% 6px;
+  padding: 8px 5px 6px 5px;
   text-align: center;
   font-size: 18px;
-  width: 20%;
-  border-radius: 5px;
+  width: auto;
+  border-radius: 0px 5px 5px 0px;
 
 }
 
