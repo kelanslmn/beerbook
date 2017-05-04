@@ -1,12 +1,14 @@
 <template>
   <div id="app">
 
-    <h1 id="titre"> BeerBook </h1>
+    <h1 id="titre">BeerBook</h1>
 
     <img src= "src/assets/beerbook.png" id= "logo"/>
 
-    <input id="search" type="text" name="search" placeholder="Recherchez..">
-
+    <form>
+      <input id="search" type="text" name="search" placeholder="Recherchez ...">
+      <button id="button" type="button">Recherche</button>
+    </form>
 
     <h2 id="description"> Bienvenue sur la page "Beerbook"! Ce site héberge des revues de bières afin de vous en apprendre plus et de partager votre savoir sur cette boisson. N'hésitez pas à partager et laisser des commentaires! </h2>
 
@@ -38,37 +40,62 @@ export default {
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-
-
   text-align: center;
   color: #2c3e50;
-
   background-image: url("assets/background.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+
+
 
 }
 
 #titre {
-	font-family: Segoe;
-	font-size: 100px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height:100px;
+  font-family: Segoe;
+  font-size: 100px;
+  margin-top: -10px;
+  font-weight: 400;
+  line-height: 100px;
+  padding-top: 50px;
 
 }
+
+form{
+  margin-left:auto;
+  margin-right:auto;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 5px solid #ccc;
+  width: 500px;
+}
+
 #search{
+  background-image: url('assets/recherche.png');
+  font-size: 20px;
+  background-position: 5px 2px;
+  background-repeat: no-repeat;
+  background-size: 8% auto;
+  padding: 6px 0px 6px 9%;
+  margin-left: 0px;
+  width: 70%;
+  border: none;
+  border-radius: 5px;
 
-background-image: url('assets/recherche.png');
-width: 200px;
-box-sizing: border-box;
-font-size: 20px;
-background-position: 5px 5px;
-background-repeat: no-repeat;
-background-size: 12% auto;
-padding: 5px 0px 5px 40px;
-border-radius: 10px;
-border: 3px solid #ccc;}
 
+}
+
+#button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 0% 6px;
+  text-align: center;
+  font-size: 18px;
+  width: 20%;
+  border-radius: 5px;
+
+}
 
 
 
