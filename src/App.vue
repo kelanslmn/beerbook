@@ -3,7 +3,9 @@
 
     <h1 id="titre">BeerBook</h1>
 
-    <img src= "src/assets/beerbook.png" id= "logo"/>
+    <a href="index.html" >
+      <img src= "src/assets/beerbook.png" id= "logo"/>
+    </a>
 
     <form>
       <input id="search" type="text" name="search" placeholder="Recherchez ...">
@@ -13,8 +15,20 @@
     <h2 id="description"> Bienvenue sur la page "Beerbook"! Ce site héberge des revues de bières afin de vous en apprendre plus et de partager votre savoir sur cette boisson. N'hésitez pas à partager et laisser des commentaires! </h2>
 
     <div id="resau_sociaux">
-      <a id=""></a>
-      <img src="src/assets/instagram.png" id="instagram" />
+      <a target="_blank" href="//www.instagram.com">
+        <img src="src/assets/instagram.png" id="instagram" />
+      </a>
+      <a target="_blank" href="//www.facebook.com">
+        <img src="src/assets/facebook.png" id="facebook" />
+      </a>
+      <a target="_blank" href="//www.twitter.com">
+        <img src="src/assets/twitter.png" id="twitter" />
+      </a>
+    </div>
+
+    <div id="bas_page">
+      <p class="text_bas_page">Ludovic Mareemootoo - Matteo Munari - Kelan Solomon</p>
+      <p class="text_bas_page">2017 - Sismondi</p>
     </div>
 
   </div>
@@ -40,11 +54,11 @@ export default {
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  text-align: center;
   color: #2c3e50;
   background-image: url("assets/background.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-position: top;
 
 
 
@@ -53,6 +67,7 @@ export default {
 
 #titre {
   font-family: Segoe;
+  text-align: center;
   font-size: 100px;
   margin-top: -10px;
   font-weight: 400;
@@ -110,6 +125,27 @@ form{
 
 #instagram {
   height: 30px;
+}
+#facebook {
+  height: 30px;
+}
+#twitter {
+  height: 30px;
+}
+
+#description {
+  margin-left:auto;
+  margin-right:auto;
+  text-align: center;
+}
+
+#bas_page {
+  text-align: center;
+  background-color: white;
+}
+
+.text_bas_page {
+  opacity: 0.8;
 }
 
 </style>
