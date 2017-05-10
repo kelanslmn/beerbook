@@ -26,6 +26,27 @@
       </a>
     </div>
 
+    <div id="menu">
+      <button class="afficher">Test 1</button>
+        <div class="panel">
+          <p> >Test </p>
+        </div>
+        <div class="panel">
+          <p> >ho </p>
+        </div>
+        <div class="panel">
+          <p> >Test </p>
+        </div>
+        <button class="afficher">Test 2</button>
+          <div class="panel">
+            <p> Test </p>
+          </div>
+        <button class="afficher">Test 3</button>
+          <div class="panel">
+            <p> Test </p>
+          </div>
+    </div>
+
     <div id="bas_page">
       <p class="text_bas_page">Ludovic Mareemootoo - Matteo Munari - Kelan Solomon</p>
       <p class="text_bas_page">2017 - Sismondi</p>
@@ -146,6 +167,31 @@ form{
 
 .text_bas_page {
   opacity: 0.8;
+}
+
+button.afficher {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+}
+Test
+button.afficher.active, button.afficher:hover {
+    background-color: #ddd;
+}
+div.panel {
+    padding: 1px 18px;
+    background-color: white;
+    display: none;
+
+}
+
+#menu {
+  width: 200px;
+  position: fixed; top: 250px;
 }
 
 </style>
