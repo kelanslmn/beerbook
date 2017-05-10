@@ -15,7 +15,7 @@
     <h2 id="description"> Bienvenue sur la page "Beerbook"! Ce site héberge des revues de bières afin de vous en apprendre plus et de partager votre savoir sur cette boisson. N'hésitez pas à partager et laisser des commentaires! </h2>
 
     <div id="resau_sociaux">
-      <a target="_blank" href="//www.instagram.com">
+      <a target="_blank" href="//www.instagram.com/beerbook.review/">
         <img src="src/assets/instagram.png" id="instagram" />
       </a>
       <a target="_blank" href="//www.facebook.com">
