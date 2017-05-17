@@ -25,8 +25,7 @@
         <img src="src/assets/twitter.png" id="twitter" />
       </a>
     </div>
-
-    <div id="bas_page">
+      <div id="bas_page">
       <p class="text_bas_page">Ludovic Mareemootoo - Matteo Munari - Kelan Solomon</p>
       <p class="text_bas_page">2017 - Sismondi</p>
     </div>
@@ -59,9 +58,6 @@ export default {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top;
-
-
-
 
 }
 

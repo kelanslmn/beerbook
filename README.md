@@ -11,4 +11,4 @@
 
 * page d'accueil (menu, barre de recherche, logo) -> ludovic matteo kelan (ensemble) -> 17/05/17
 * page individuelle des revues de bières (photo, revue, commentaires, note, etc.)-> ludovic matteo kelan (séparés) -> petit à petit jusqu'à la fin de l'année
-hello
+jhagfshdgf
