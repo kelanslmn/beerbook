@@ -8,14 +8,14 @@
     </a>
 
     <form>
-      <input id="search" type="text" name="search" placeholder="Recherchez ...">
+      <input id="search" type="text" name="search" placeholder="Rechercher ...">
       <button id="button" type="button">Recherche</button>
     </form>
 
     <h2 id="description"> Bienvenue sur la page "Beerbook"! Ce site héberge des revues de bières afin de vous en apprendre plus et de partager votre savoir sur cette boisson. N'hésitez pas à partager et laisser des commentaires! </h2>
 
     <div id="resau_sociaux">
-      <a target="_blank" href="//www.instagram.com">
+      <a target="_blank" href="//www.instagram.com/beerbook.review/">
         <img src="src/assets/instagram.png" id="instagram" />
       </a>
       <a target="_blank" href="//www.facebook.com">
@@ -87,8 +87,9 @@ form{
   background-position: 5px 2px;
   background-repeat: no-repeat;
   background-size: 8% auto;
-  padding: 6px 0px 6px 45px;
+  padding: 6.5px 0px 7px 45px;
   margin-left: 0px;
+  margin-right: -4px;
   width: 70%;
   border: none;
   border-radius: 5px 0px 0px 5px;
@@ -105,7 +106,6 @@ form{
   font-size: 18px;
   width: auto;
   border-radius: 0px 5px 5px 0px;
-
 }
 
 
