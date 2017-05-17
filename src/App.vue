@@ -1,6 +1,16 @@
 <template>
   <div id="app">
 
+  <div class="container" id="menu">
+    <h2>Menu</h2>
+    <ul class="nav nav-pills nav-stacked navbar-left" role="tablist">
+      <li class=""><a href="#">Home</a></li>
+      <li class=""><a href="#">Page d'accueil</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </div>
+
     <h1 id="titre">BeerBook</h1>
 
     <a href="index.html" >
@@ -12,7 +22,9 @@
       <button id="button" type="button">Recherche</button>
     </form>
 
-    <h2 id="description"> Bienvenue sur la page "Beerbook"! Ce site héberge des revues de bières afin de vous en apprendre plus et de partager votre savoir sur cette boisson. N'hésitez pas à partager et laisser des commentaires! </h2>
+    <div>
+      <h2 id="description"> Bienvenue sur la page "Beerbook"! Ce site héberge des revues de bières afin de vous en apprendre plus et de partager votre savoir sur cette boisson. N'hésitez pas à partager et laisser des commentaires! </h2>
+    </div>
 
     <div id="resau_sociaux">
       <a target="_blank" href="//www.instagram.com/beerbook.review/">
@@ -25,6 +37,9 @@
         <img src="src/assets/twitter.png" id="twitter" />
       </a>
     </div>
+
+
+
 
     <div id="bas_page">
       <p class="text_bas_page">Ludovic Mareemootoo - Matteo Munari - Kelan Solomon</p>
@@ -59,11 +74,9 @@ export default {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top;
-
-
-
-
 }
+
+
 
 #titre {
   font-family: Segoe;
@@ -73,8 +86,8 @@ export default {
   font-weight: 400;
   line-height: 100px;
   padding-top: 50px;
-
 }
+
 
 form{
   margin-left:auto;
@@ -85,30 +98,29 @@ form{
   width: 500px;
 }
 
+
 #search{
   background-image: url('assets/recherche.png');
   font-size: 20px;
-  background-position: 5px 2px;
+  background-position: 5px 5px;
   background-repeat: no-repeat;
-  background-size: 8% auto;
+  background-size: 9% auto;
   padding: 6.5px 0px 7px 45px;
   margin-left: 0px;
   margin-right: -4px;
   width: 70%;
   border: none;
   border-radius: 5px 0px 0px 5px;
-
-
 }
 
 #button{
   background-color: #4CAF50;
   border: none;
   color: white;
-  padding: 8px 5px 6px 5px;
+  padding: 9px 20px 8px 10px;
   text-align: center;
   font-size: 18px;
-  width: auto;
+  width: 30%;
   border-radius: 0px 5px 5px 0px;
 }
 
@@ -147,5 +159,11 @@ form{
 .text_bas_page {
   opacity: 0.8;
 }
+
+#menu {
+  position: absolute; top: 180px;
+  background-color: black
+}
+
 
 </style>
