@@ -2,12 +2,12 @@
   <div id="app">
 
   <div class="container" id="menu">
-    <h2>Menu</h2>
+    <h2 id="menu-titre">Menu</h2>
     <ul class="nav nav-pills nav-stacked navbar-left" role="tablist">
-      <li class=""><a href="#">Home</a></li>
-      <li class=""><a href="#">Page d'accueil</a></li>
-      <li><a href="#">CSS</a></li>
-      <li><a href="#">About</a></li>
+      <li ><a class="menu-text" href="#">Page d'accueil</a></li>
+      <li ><a class="menu-text" href="#">Nos Bières</a></li>
+      <li ><a class="menu-text" href="#">Vos propositions</a></li>
+      <li ><a class="menu-text" href="#">Nous contacter</a></li>
     </ul>
   </div>
 
@@ -22,8 +22,8 @@
       <button id="button" type="button">Recherche</button>
     </form>
 
-    <div>
-      <h2 id="description"> Bienvenue sur la page "Beerbook"! Ce site héberge des revues de bières afin de vous en apprendre plus et de partager votre savoir sur cette boisson. N'hésitez pas à partager et laisser des commentaires! </h2>
+    <div id="description">
+      <h2 > Bienvenue sur la page "Beerbook"! Ce site héberge des revues de bières afin de vous en apprendre plus et de partager votre savoir sur cette boisson. N'hésitez pas à partager et laisser des commentaires! </h2>
     </div>
 
     <div id="resau_sociaux">
@@ -146,7 +146,7 @@ form{
 }
 
 #description {
-  margin-left:auto;
+  margin-left: 150px;
   margin-right:auto;
   text-align: center;
 }
@@ -161,8 +161,22 @@ form{
 }
 
 #menu {
-  position: absolute; top: 180px;
-  background-color: black
+  position: absolute; top: 230px;
+  width: auto;
+  padding: 0px 0px 0px 10px;
+  background-color: grey;
+  border: none;
+  border-radius: 0px 7px 7px 0px;
+}
+
+#menu-titre {
+  padding-left: 10px;
+  letter-spacing: 3px;
+}
+
+
+.menu-text {
+  color: black;
 }
 
 
