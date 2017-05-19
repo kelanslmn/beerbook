@@ -4,7 +4,7 @@
   <div class="container" id="menu">
     <h2 id="menu-titre">Menu</h2>
     <ul class="nav nav-pills nav-stacked navbar-left" role="tablist">
-      <li ><a class="menu-text" href="#">Page d'accueil</a></li>
+      <li ><a class="menu-text" href="index.html">Page d'accueil</a></li>
       <li ><a class="menu-text" href="#">Nos Bières</a></li>
       <li ><a class="menu-text" href="#">Vos propositions</a></li>
       <li ><a class="menu-text" href="#">Nous contacter</a></li>

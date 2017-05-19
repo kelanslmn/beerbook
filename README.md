@@ -12,3 +12,9 @@
 
 * Page d'accueil + Menu : Ludovic (24.05.2017)
 * Page individuelle des revues de bières (photo, revue, commentaires, note, etc.)-> Matteo, Kelan (24.05.2107)
+
+## Technique utilisée:
+
+ * [Bootstrap](http://getbootstrap.com) pour le css
+ * [Vues.js](https://vuejs.org)
+ * Une base de donées pour les bières
