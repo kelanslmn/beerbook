@@ -49,6 +49,11 @@
 
     <div class="well" id="informations">
       <h1>Bière du mois</h1>
+      <p>PG</p>
+      <a><img src="src/assets/pg.png"/></a>
+
+
+
 
     </div>
 
@@ -80,6 +85,11 @@ export default {
 
 
 <style>
+
+
+
+
+
 
 #informations{
   position: relative; left: 150px;
