@@ -5,9 +5,17 @@
     <h2 id="menu-titre">Menu</h2>
     <ul class="nav nav-pills nav-stacked navbar-left" role="tablist">
       <li ><a class="menu-text" href="index.html">Page d'accueil</a></li>
-      <li ><a class="menu-text" href="#">Nos Bières</a></li>
+
+      <li><a class="menu-text" data-toggle="dropdown" href="#">Nos bières <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="PG.html">PG</a></li>
+          <li><a href="#">Gralsburg</a></li>
+          <li><a href="#">Dr. Gabs</a></li>
+        </ul>
+      </li>
+
       <li ><a class="menu-text" href="#">Vos propositions</a></li>
-      <li ><a class="menu-text" href="#">Nous contacter</a></li>
+      <li ><a class="menu-text" href="mailto:beerbook.review@gmail.com">Nous contacter</a></li>
     </ul>
   </div>
 
@@ -39,6 +47,12 @@
     </div>
 
 
+    <div class="well" id="informations">
+      <h1>Bière du mois</h1>
+
+    </div>
+
+
 
 
     <div id="bas_page">
@@ -66,6 +80,12 @@ export default {
 
 
 <style>
+
+#informations{
+  position: relative; left: 150px;
+  max-width: 1140px;
+  text-align: center;
+}
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
