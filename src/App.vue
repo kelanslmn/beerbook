@@ -46,25 +46,29 @@
       </a>
     </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/kelan
 
 
     <div class="well" id="informations">
       <h1>Bière du mois</h1>
       <p>PG</p>
       <a><img src="src/assets/pg.png"/></a>
-
-
-
-
     </div>
 
 
 
 
     <div id="bas_page">
+<<<<<<< HEAD
 =======
       <div id="bas_page">
 >>>>>>> kelan
+=======
+
+>>>>>>> origin/kelan
       <p class="text_bas_page">Ludovic Mareemootoo - Matteo Munari - Kelan Solomon</p>
       <p class="text_bas_page">2017 - Sismondi</p>
     </div>
@@ -115,10 +119,14 @@ export default {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 }
 >>>>>>> kelan
+=======
+
+>>>>>>> origin/kelan
 
 #titre {
   font-family: Segoe;
