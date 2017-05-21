@@ -41,29 +41,29 @@
       <a target="_blank" href="//www.facebook.com">
         <img src="src/assets/facebook.png" id="facebook" />
       </a>
-      <a target="_blank" href="//www.twitter.com">
+      <a target="_blank" href="src/PG.vue"">
         <img src="src/assets/twitter.png" id="twitter" />
       </a>
     </div>
+
 
 
     <div class="well" id="informations">
       <h1>Bière du mois</h1>
       <p>PG</p>
       <a><img src="src/assets/pg.png"/></a>
-
-
-
-
     </div>
 
 
 
 
     <div id="bas_page">
+
       <p class="text_bas_page">Ludovic Mareemootoo - Matteo Munari - Kelan Solomon</p>
       <p class="text_bas_page">2017 - Sismondi</p>
     </div>
+
+   <a href="PG.html"><button>review PG</button></a>
 
   </div>
 
@@ -77,8 +77,10 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
+
     }
   }
+
 }
 </script>
 

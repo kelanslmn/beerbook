@@ -8,6 +8,7 @@
 * Possibilité d'ajouter une bière a la base de donnée du *beerbook*
 * Chaque bière a une page de revue avec une fiche d'information, goût, type, commentaires, ...
 
+
 ## Rôles:
 
 * Page d'accueil + Menu : Ludovic (24.05.2017)
@@ -18,3 +19,4 @@
  * [Bootstrap](http://getbootstrap.com) pour le css
  * [Vues.js](https://vuejs.org)
  * Une base de donées pour les bières
+
