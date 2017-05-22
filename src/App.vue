@@ -45,26 +45,20 @@
         <img src="src/assets/twitter.png" id="twitter" />
       </a>
     </div>
-<<<<<<< HEAD
 
 
     <div class="well" id="informations">
       <h1>Bière du mois</h1>
       <p>PG</p>
       <a><img src="src/assets/pg.png"/></a>
-
-
-
-
     </div>
 
 
 
 
     <div id="bas_page">
-=======
+
       <div id="bas_page">
->>>>>>> kelan
       <p class="text_bas_page">Ludovic Mareemootoo - Matteo Munari - Kelan Solomon</p>
       <p class="text_bas_page">2017 - Sismondi</p>
     </div>
@@ -114,11 +108,6 @@ export default {
   background-position: top;
 }
 
-<<<<<<< HEAD
-
-=======
-}
->>>>>>> kelan
 
 #titre {
   font-family: Segoe;
