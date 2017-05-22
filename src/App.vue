@@ -46,17 +46,12 @@
       </a>
     </div>
 
-
     <div class="well" id="informations">
       <h1>Bière du mois</h1>
       <p>PG</p>
       <a><img src="src/assets/pg.png"/></a>
     </div>
 
-
-
-
-    <div id="bas_page">
 
       <div id="bas_page">
       <p class="text_bas_page">Ludovic Mareemootoo - Matteo Munari - Kelan Solomon</p>
