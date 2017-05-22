@@ -102,6 +102,7 @@ export default {
   background-position: top;
 }
 
+
 #titre {
   font-family: Segoe;
   text-align: center;
