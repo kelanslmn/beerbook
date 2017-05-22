@@ -45,6 +45,10 @@
         <img src="src/assets/twitter.png" id="twitter" />
       </a>
     </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 
     <div class="well" id="informations">
       <h1>Bière du mois</h1>
@@ -52,6 +56,14 @@
       <a><img src="src/assets/pg.png"/></a>
     </div>
 
+<<<<<<< HEAD
+=======
+
+
+
+    <div id="bas_page">
+
+>>>>>>> master
       <div id="bas_page">
       <p class="text_bas_page">Ludovic Mareemootoo - Matteo Munari - Kelan Solomon</p>
       <p class="text_bas_page">2017 - Sismondi</p>
@@ -102,6 +114,10 @@ export default {
   background-position: top;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 #titre {
   font-family: Segoe;
   text-align: center;
