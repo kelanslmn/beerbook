@@ -51,10 +51,6 @@
       <h1>Bière du mois</h1>
       <p>PG</p>
       <a><img src="src/assets/pg.png"/></a>
-
-
-
-
     </div>
 
 
@@ -93,7 +89,7 @@ export default {
 
 #informations{
   position: relative; left: 150px;
-  max-width: 1140px;
+  width: 87.5%;
   text-align: center;
 }
 
