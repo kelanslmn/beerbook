@@ -14,7 +14,7 @@
         </ul>
       </li>
 
-      <li ><a class="menu-text" href="#">Vos propositions</a></li>
+      <li ><a class="menu-text" href="propositions.html">Vos propositions</a></li>
       <li ><a class="menu-text" href="mailto:beerbook.review@gmail.com">Nous contacter</a></li>
     </ul>
   </div>
@@ -41,22 +41,29 @@
       <a target="_blank" href="//www.facebook.com">
         <img src="src/assets/facebook.png" id="facebook" />
       </a>
-      <a target="_blank" href="src/PG.vue"">
+      <a target="_blank" href="//www.twitter.com">
         <img src="src/assets/twitter.png" id="twitter" />
       </a>
     </div>
 
-    <div class="well" id="informations">
+    <section class="well" id="informations">
       <h1>Bière du mois</h1>
       <p>PG</p>
-      <a><img src="src/assets/pg.png"/></a>
-    </div>
+      <img id="photo" src="src/assets/pg.png"/>
+
+      <div class="rating">
+        <img id="star" onclick="changeImage('src/assets/star1.png')" src="src/assets/star0.png">
+      </div>
 
 
-      <div id="bas_page">
+    </section>
+
+
+    <footer id="bas_page">
       <p class="text_bas_page">Ludovic Mareemootoo - Matteo Munari - Kelan Solomon</p>
       <p class="text_bas_page">2017 - Sismondi</p>
     </div>
+    </footer>
 
   </div>
 
@@ -73,8 +80,12 @@ export default {
 
     }
   }
-
 }
+
+function changeImage(a) {
+        document.getElementById("star").src=a;
+    }
+
 </script>
 
 
@@ -85,10 +96,10 @@ export default {
 
 
 
-
 #informations{
   position: relative; left: 150px;
-  max-width: 1140px;
+  display: inline-block;
+  width: 85%;
   text-align: center;
 }
 
@@ -100,6 +111,8 @@ export default {
   background-repeat: no-repeat;
   background-position: top;
 }
+
+
 
 
 #titre {
@@ -178,10 +191,12 @@ form{
 #bas_page {
   text-align: center;
   background-color: white;
+    position: relative; bottom: 0px;
 }
 
 .text_bas_page {
   opacity: 0.8;
+
 }
 
 #menu {
@@ -197,7 +212,6 @@ form{
   padding-left: 10px;
   letter-spacing: 3px;
 }
-
 
 .menu-text {
   color: black;
