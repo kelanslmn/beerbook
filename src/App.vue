@@ -58,8 +58,6 @@
       <p class="text_bas_page">2017 - Sismondi</p>
     </div>
 
-   <a href="PG.html"><button>review PG</button></a>
-
   </div>
 
 </template>
