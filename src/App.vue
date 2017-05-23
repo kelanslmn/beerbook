@@ -97,7 +97,8 @@ function changeImage(a) {
 
 #informations{
   position: relative; left: 150px;
-  width: 90%;
+  display: inline-block;
+  width: 85%;
   text-align: center;
 }
 
