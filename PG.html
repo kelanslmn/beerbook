@@ -31,13 +31,39 @@
         </div>
       </div>
       </form>
+      <form>
+        Mets une revue a cette biere! Pensez au prix et a la qualité.
+       <select id="mySelect">
+         <option>1</option>
+         <option>2</option>
+         <option>3</option>
+         <option>4</option>
+         <option>5</option>
+         <option>6</option>
+         <option>7</option>
+         <option>8</option>
+         <option>9</option>
+         <option>10</option>
+       </select>
+        <input type="button" onclick="getIndex()" value="Submit">
+      </form>
+
     </div>
+  <p id="note1"></p>
   </body>
   <footer id="bas_page">
       <p class="text_bas_page">Ludovic Mareemootoo - Matteo Munari - Kelan Solomon</p>
       <p class="text_bas_page">2017 - Sismondi</p>
   </footer>
 
+  <script>
+    var note = function getIndex() {
+    document.getElementById("mySelect").selectedIndex;}
+
++ note;
+
+
+  </script>
   <style>
 
 
