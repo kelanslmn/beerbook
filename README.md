@@ -13,10 +13,8 @@
 * Page d'accueil + Menu : Ludovic (24.05.2017)
 * Page individuelle des revues de bières (photo, revue, commentaires, note, etc.)-> Matteo, Kelan (24.05.2107)
 
-## Technique utilisée:
+## Techniques utilisées:
 
  * [Bootstrap](http://getbootstrap.com) pour le css
  * [Vues.js](https://vuejs.org)
- * Une base de donées pour les bières
- * page d'accueil (menu, barre de recherche, logo) -> ludovic matteo kelan (ensemble) -> 17/05/17
- * page individuelle des revues de bières (photo, revue, commentaires, note, etc.)-> ludovic matteo kelan (séparés) -> petit à petit jusqu'à la fin de l'année
+ * Une base de donées pour les bières (si possible [jQuery](https://jquery.com))
