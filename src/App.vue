@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <template>
   <div id="app">
 
@@ -151,3 +152,5 @@ form{
 }
 
 </style>
+=======
+>>>>>>> master
