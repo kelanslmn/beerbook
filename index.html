@@ -2,10 +2,232 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>ls</title>
+    <title>Beerbook Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <div id="app"></div>
-    <script src="/dist/build.js"></script>
-  </body>
+    <div id="app">
+
+    <div class="container" id="menu">
+      <h2 id="menu-titre">Menu</h2>
+      <ul class="nav nav-pills nav-stacked navbar-left" role="tablist">
+        <li ><a class="menu-text" href="index.html">Page d'accueil</a></li>
+
+        <li><a class="menu-text" data-toggle="dropdown" href="#">Nos bières <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="PG.html">PG</a></li>
+            <li><a href="#">Gralsburg</a></li>
+            <li><a href="#">Dr. Gabs</a></li>
+          </ul>
+        </li>
+
+        <li ><a class="menu-text" href="propositions.html">Vos propositions</a></li>
+        <li ><a class="menu-text" href="mailto:beerbook.review@gmail.com">Nous contacter</a></li>
+      </ul>
+    </div>
+
+      <h1 id="titre">BeerBook</h1>
+
+      <a href="index.html" >
+        <img src= "src/assets/beerbook.png" id= "logo"/>
+      </a>
+
+      <form>
+        <input id="search" type="text" name="search" placeholder="Rechercher ...">
+        <button id="button" type="button">Recherche</button>
+      </form>
+
+      <div id="description">
+        <h2 > Bienvenue sur la page "Beerbook"! Ce site héberge des revues de bières afin de vous en apprendre plus et de partager votre savoir sur cette boisson. N'hésitez pas à partager et laisser des commentaires! </h2>
+      </div>
+
+      <div id="resau_sociaux">
+        <a target="_blank" href="//www.instagram.com/beerbook.review/">
+          <img src="src/assets/instagram.png" id="instagram" />
+        </a>
+        <a target="_blank" href="//www.facebook.com">
+          <img src="src/assets/facebook.png" id="facebook" />
+        </a>
+        <a target="_blank" href="//www.twitter.com">
+          <img src="src/assets/twitter.png" id="twitter" />
+        </a>
+      </div>
+
+      <section class="well" id="informations">
+        <h1>Bière du mois</h1>
+        <p>PG</p>
+        <img id="photo" src="src/assets/pg.png"/>
+
+        <div id="rating">
+          <img class="star" onmouseover="changeImage('src/assets/star1.png')" onmouseout="normalImage('src/assets/star0.png')" src="src/assets/star0.png">
+          <img class="star" onmouseover="changeImage('src/assets/star1.png')" onmouseout="normalImage('src/assets/star0.png')" src="src/assets/star0.png">
+          <img class="star" onmouseover="changeImage('src/assets/star1.png')" onmouseout="normalImage('src/assets/star0.png')" src="src/assets/star0.png">
+          <img class="star" onmouseover="changeImage('src/assets/star1.png')" onmouseout="normalImage('src/assets/star0.png')" src="src/assets/star0.png">
+          <img class="star" onmouseover="changeImage('src/assets/star1.png')" onmouseout="normalImage('src/assets/star0.png')" src="src/assets/star0.png">
+        </div>
+
+
+      </section>
+
+
+      <footer id="bas_page">
+        <p class="text_bas_page">Ludovic Mareemootoo - Matteo Munari - Kelan Solomon</p>
+        <p class="text_bas_page">2017 - Sismondi</p>
+      </footer>
+
+    </div>
+
+</body>
+
+<script>
+
+  function changeImage(a) {
+    var c = document.getElementById("rating").children;
+    for(i<5;i=0;i++){
+      c[i].src=a;
+      }
+    }
+  function normalImage(a) {
+    var c = document.getElementById("rating").children;
+    for(i<5;i=0;i++){
+      c[i].src=a;
+      }
+    }
+
+</script>
+
+
+
+  <style>
+
+
+
+
+
+  #informations{
+    position: relative; left: 150px;
+    display: inline-block;
+    width: 85%;
+    text-align: center;
+  }
+
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    color: #2c3e50;
+    background-image: url("src/assets/background.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+
+
+
+  #titre {
+    font-family: Segoe;
+    text-align: center;
+    font-size: 100px;
+    margin-top: -10px;
+    font-weight: 400;
+    line-height: 100px;
+    padding-top: 50px;
+  }
+
+
+  form{
+    margin-left:auto;
+    margin-right:auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 5px solid #ccc;
+    width: 500px;
+  }
+
+
+  #search{
+    background-image: url('src/assets/recherche.png');
+    font-size: 20px;
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    background-size: 9% auto;
+    padding: 6.5px 0px 7px 45px;
+    margin-left: 0px;
+    margin-right: -4px;
+    width: 70%;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+  }
+
+  #button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 9px 20px 8px 10px;
+    text-align: center;
+    font-size: 18px;
+    width: 30%;
+    border-radius: 0px 5px 5px 0px;
+  }
+
+
+
+  #logo {
+    position: absolute; top: 20px; left: 20px;
+    height: 200px ;
+  }
+
+  #resau_sociaux {
+    position: fixed; right: 10px; top: 10px;
+  }
+
+  #instagram {
+    height: 30px;
+  }
+  #facebook {
+    height: 30px;
+  }
+  #twitter {
+    height: 30px;
+  }
+
+  #description {
+    margin-left: 150px;
+    margin-right:auto;
+    text-align: center;
+  }
+
+  #bas_page {
+    text-align: center;
+    background-color: white;
+      position: relative; bottom: 0px;
+  }
+
+  .text_bas_page {
+    opacity: 0.8;
+
+  }
+
+  #menu {
+    position: absolute; top: 230px;
+    width: auto;
+    padding: 0px 0px 0px 10px;
+    background-color: grey;
+    border: none;
+    border-radius: 0px 7px 7px 0px;
+  }
+
+  #menu-titre {
+    padding-left: 10px;
+    letter-spacing: 3px;
+  }
+
+  .menu-text {
+    color: black;
+  }
+
+
+  </style>
 </html>
