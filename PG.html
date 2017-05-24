@@ -2,12 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>PG</title>
 
   </head>
   <body>
 
-    <div id= "PG">
+  <div id="resau_sociaux">
+        <a target="_blank" href="//www.instagram.com/beerbook.review/">
+          <img src="src/assets/instagram.png" id="instagram" />
+        </a>
+        <a target="_blank" href="//www.facebook.com">
+          <img src="src/assets/facebook.png" id="facebook" />
+        </a>
+        <a target="_blank" href="//www.twitter.com">
+          <img src="src/assets/twitter.png" id="twitter" />
+        </a>
+      </div>
+
+   <div class="container" id="menu">
+      <h2 id="menu-titre">Menu</h2>
+      <ul class="nav nav-pills nav-stacked navbar-left" role="tablist">
+        <li ><a class="menu-text" href="index.html">Page d'accueil</a></li>
+
+        <li><a class="menu-text" data-toggle="dropdown" href="#">Nos bières <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="PG.html">PG</a></li>
+            <li><a href="#">Gralsburg</a></li>
+            <li><a href="#">Dr. Gabs</a></li>
+            <li><a href="Heineken.html">Heineken</a></li>
+          </ul>
+        </li>
+
+        <li ><a class="menu-text" href="propositions.html">Vos propositions</a></li>
+        <li ><a class="menu-text" href="mailto:beerbook.review@gmail.com">Nous contacter</a></li>
+      </ul>
+    </div>
+  <div id= "PG">
       <a href="index.html" >
         <img src= "src/assets/beerbook.png" id= "logo"/>
       </a>
@@ -135,6 +169,38 @@ IMG.cover{
 #bas_page {
     text-align: center;
     background-color: white;}
+    #menu {
+    position: absolute; top: 230px;
+    width: auto;
+    padding: 0px 0px 0px 10px;
+    background-color: grey;
+    border: none;
+    border-radius: 0px 7px 7px 0px;
+  }
+
+  #menu-titre {
+    padding-left: 10px;
+    letter-spacing: 3px;
+  }
+
+  .menu-text {
+    color: black;
+  }
+
+
+ #resau_sociaux {
+    position: fixed; right: 10px; top: 10px;
+  }
+
+  #instagram {
+    height: 30px;
+  }
+  #facebook {
+    height: 30px;
+  }
+  #twitter {
+    height: 30px;
+  }
 
 
 
