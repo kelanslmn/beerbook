@@ -11,34 +11,81 @@
       <a href="index.html" >
         <img src= "src/assets/beerbook.png" id= "logo"/>
       </a>
-      <img class="cover" src="src/assets/cover.jpg" />
+      <img class="cover" src="src/assets/coop.jpg" />
       <img class="image" src= "src/assets/pg.png" />
       <br>
-      <h1 id="titre"> Bière Prix Garantie (PG) </h1>
-      <p id=" description">
-        <a class="soustitre"> Description: </a> Une bière blonde, autrement connue sous le nom de "PG" ( pronnoncé  "Pidji") est la bière officiel du Collège Sismondi a Genève. <br>
+      <h1 style=" width: 600px" id="titre"> Bière Prix Garantie (PG) </h1>
+      <u id=" description">
+        <u> </u><a class="soustitre"> Description: </a> </u> <strong> Une bière blonde, autrement connue sous le nom de "PG" ( pronnoncé  "Pidji") est la bière officiel du Collège Sismondi a Genève.</strong> <br>
         <a class="soustitre">Prix:</a>  0.50 CHF <br>
         <a class="soustitre">Provenance:</a>  Coop <br>
         <a class="soustitre">Classification: </a> Bière blonde (pale lager)<br>
-        <a class="soustitre">Revue:</a>  Peut-etre pas <strong>le meilleur </strong> gout mais rapport quantité-qualité-prix 10/10
+        <a class="soustitre">Revue:</a>  Peut-etre pas le meilleur goût mais rapport quantité-qualité-prix 10/10
       </p>
+
+      <form class="form-horizontal">
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="comment">Commentaires:</label>
+        <div class="col-sm-10">
+           <textarea class="form-control" rows="10" cols="120" id="comment" placeholder="Laissez une petite revue!"></textarea>
+        </div>
+      </div>
+      </form>
+      <form>
+        Mets une revue a cette biere! Pensez au prix et a la qualité.
+       <select id="mySelect">
+         <option>1</option>
+         <option>2</option>
+         <option>3</option>
+         <option>4</option>
+         <option>5</option>
+         <option>6</option>
+         <option>7</option>
+         <option>8</option>
+         <option>9</option>
+         <option>10</option>
+       </select>
+        <input type="button" onclick="getIndex()" value="Submit">
+      </form>
+
     </div>
-
+  <p id="note1"></p>
   </body>
+  <footer id="bas_page">
+      <p class="text_bas_page">Ludovic Mareemootoo - Matteo Munari - Kelan Solomon</p>
+      <p class="text_bas_page">2017 - Sismondi</p>
+  </footer>
 
+  <script>
+    var note = function getIndex() {
+    document.getElementById("mySelect").selectedIndex;}
+
++ note;
+
+
+  </script>
   <style>
 
 
+#PG {
+  font-family: Segoe;
+  background-color:white;
+  font-size: 20px;
+  }
+
 h1 {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 5px;
+  border-color: rgba(0,0,255,0.3);
+
 }
 
 #description{
   text-aline: center:
-}
-
-#PG {
-  font-family: "Lucida Console", Monaco, monospace;
 }
 
 .soustitre {
@@ -71,6 +118,25 @@ IMG.cover{
   margin-right: auto
   margin-left: auto;
 }
+#rectangle {
+    width:200px;
+    height:100px;
+    background: ;
+}
+
+.form-control {
+    border-radius: 5px;
+    font-size: 15px;}
+
+ .form-horizontal {
+    display: inline-block;
+    width: 80%;}
+
+#bas_page {
+    text-align: center;
+    background-color: white;}
+
+
 
   </style>
 </html>
