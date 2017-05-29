@@ -11,7 +11,7 @@
   </head>
   <body>
 
-    <div id= "DrGabs">
+    <section id= "DrGabs">
       <a href="index.html" >
         <img src= "src/assets/beerbook.png" id= "logo"/>
       </a>
@@ -19,13 +19,15 @@
       <img class="image" src= "src/assets/docgabs_tempete.jpg" height="300px" />
       <br>
       <h1 style=" width: 600px" id="titre"> DrGabs </h1>
-      <u id=" description">
-        <u> </u><a class="soustitre"> Description: </a> </u> <strong>Une biere artisanal Suisse faite à Lausanne. Plusieurs sortes de bières sont a disposition: la houleuse, le chameau, Farandole, Tempête, Ténébreuse, il y a une bière pour tout les goûts. Pas une bière de fête mais une bière a aprécier entre amis.   </strong> <br>
+      <section class="well" id="description">
+        <a class="soustitre"> Description: </a> <strong>Une biere artisanal Suisse faite à Lausanne. Plusieurs sortes de bières sont a disposition: la houleuse, le chameau, Farandole, Tempête, Ténébreuse, il y a une bière pour tout les goûts. Pas une bière de fête mais une bière a aprécier entre amis.   </strong> <br>
         <a class="soustitre">Prix:</a>  3.30 CHF <br>
         <a class="soustitre">Provenance:</a>  Coop, doctorgabs.ch <br>
         <a class="soustitre">Classification: </a> divers<br>
         <a class="soustitre">Revue:</a>   Une bière dont le prix vaux la qualité. 9/10
-      </p>
+      </section>
+
+
 
       <form class="form-horizontal">
       <div class="form-group">
@@ -35,7 +37,7 @@
         </div>
       </div>
       </form>
-      <form>
+      <form id="note">
         Mets une revue a cette biere! Pensez au prix et a la qualité.
        <select id="mySelect">
          <option>1</option>
@@ -83,6 +85,7 @@
       <img src="src/assets/twitter.png" id="twitter" />
     </a>
 </div>
+      </section>
 
 
   <p id="note1"></p>
@@ -105,7 +108,7 @@
 
 #DrGabs {
   font-family: Segoe;
-  background-color:white;
+  background-color:#f2f2f2;
   font-size: 20px;
   }
 #menu {
@@ -142,15 +145,16 @@ h1 {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  border-style: solid;
-  border-width: 5px;
-  border-radius: 5px;
-  border-color: rgba(0,0,255,0.3);
-
 }
 
-#description{
-  text-aline: center:
+.description {
+  text-aline: center;
+  background: #F0F8FF ;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+
 }
 
 .soustitre {
@@ -183,11 +187,6 @@ IMG.cover{
   margin-right: auto
   margin-left: auto;
 }
-#rectangle {
-    width:200px;
-    height:100px;
-    background: ;
-}
 
 .form-control {
     border-radius: 5px;
@@ -200,6 +199,19 @@ IMG.cover{
 #bas_page {
     text-align: center;
     background-color: white;}
+
+.well{
+    background-color: white;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#note{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 
 
 
