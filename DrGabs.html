@@ -3,22 +3,26 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>DrGabs</title>
-
   </head>
-  <body>
 
+  <body>
+    <!-- Section de la page -->
     <section id= "DrGabs">
+      <!-- Logo -->
       <a href="index.html" >
         <img src= "src/assets/beerbook.png" id= "logo"/>
       </a>
+      <!-- Images -->
       <img class="cover" src="src/assets/drgabs.jpg" />
       <img class="image" src= "src/assets/docgabs_tempete.jpg" height="300px" />
-      <br>
+      <!-- Titre -->
       <h1 style=" width: 600px" id="titre"> DrGabs </h1>
+      <!-- Description -->
       <section class="well" id="description">
         <a class="soustitre"> Description: </a> <strong>Une biere artisanal Suisse faite à Lausanne. Plusieurs sortes de bières sont a disposition: la houleuse, le chameau, Farandole, Tempête, Ténébreuse, il y a une bière pour tout les goûts. Pas une bière de fête mais une bière a aprécier entre amis.   </strong> <br>
         <a class="soustitre">Prix:</a>  3.30 CHF <br>
@@ -26,92 +30,90 @@
         <a class="soustitre">Classification: </a> divers<br>
         <a class="soustitre">Revue:</a>   Une bière dont le prix vaux la qualité. 9/10
       </section>
-
-
-
+      <!-- Commentaires -->
       <form class="form-horizontal">
-      <div class="form-group">
-        <label class="control-label col-sm-2" for="comment">Commentaires:</label>
-        <div class="col-sm-10">
-           <textarea class="form-control" rows="10" cols="120" id="comment" placeholder="Laissez une petite revue!"></textarea>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="comment">Commentaires:</label>
+          <div class="col-sm-10">
+            <textarea class="form-control" rows="10" cols="120" id="comment" placeholder="Laissez une petite revue!"></textarea>
+          </div>
         </div>
-      </div>
       </form>
+      <!-- Note -->
       <form id="note">
         Mets une revue a cette biere! Pensez au prix et a la qualité.
-       <select id="mySelect">
-         <option>1</option>
-         <option>2</option>
-         <option>3</option>
-         <option>4</option>
-         <option>5</option>
-         <option>6</option>
-         <option>7</option>
-         <option>8</option>
-         <option>9</option>
-         <option>10</option>
-       </select>
+        <select id="mySelect">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+        </select>
         <input type="button" onclick="getIndex()" value="Submit">
       </form>
-
-    </div>
-    <div class="container" id="menu">
-      <h2 id="menu-titre">Menu</h2>
-      <ul class="nav nav-pills nav-stacked navbar-left" role="tablist">
-        <li ><a class="menu-text" href="index.html">Page d'accueil</a></li>
-
-        <li><a class="menu-text" data-toggle="dropdown" href="#">Nos bières <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="PG.html">PG</a></li>
-            <li><a href="Gralsburg.html">Gralsburg</a></li>
-            <li><a href="DrGabs.html">Dr. Gabs</a></li>
-            <li><a href="Heineken.html">Heineken</a></li>
-          </ul>
-        </li>
-
-        <li ><a class="menu-text" href="propositions.html">Vos propositions</a></li>
-        <li ><a class="menu-text" href="mailto:beerbook.review@gmail.com">Nous contacter</a></li>
-      </ul>
-    </div>
-
-  <div id="resau_sociaux">
-    <a target="_blank" href="//www.instagram.com/beerbook.review/">
-      <img src="src/assets/instagram.png" id="instagram" />
-    </a>
-    <a target="_blank" href="//www.facebook.com">
-      <img src="src/assets/facebook.png" id="facebook" />
-    </a>
-    <a target="_blank" href="//www.twitter.com">
-      <img src="src/assets/twitter.png" id="twitter" />
-    </a>
-</div>
-      </section>
-
-
-  <p id="note1"></p>
+      <!-- Menu -->
+      <div class="container" id="menu">
+        <h2 id="menu-titre">Menu</h2>
+        <ul class="nav nav-pills nav-stacked navbar-left" role="tablist">
+          <li ><a class="menu-text" href="index.html">Page d'accueil</a></li>
+          <li><a class="menu-text" data-toggle="dropdown" href="#">Nos bières <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="PG.html">PG</a></li>
+              <li><a href="Gralsburg.html">Gralsburg</a></li>
+              <li><a href="DrGabs.html">Dr. Gabs</a></li>
+              <li><a href="Heineken.html">Heineken</a></li>
+            </ul>
+          </li>
+          <li ><a class="menu-text" href="propositions.html">Vos propositions</a></li>
+          <li ><a class="menu-text" href="mailto:beerbook.review@gmail.com">Nous contacter</a></li>
+        </ul>
+      </div>
+      <!-- Résaux sociaux -->
+      <div id="resau_sociaux">
+        <a target="_blank" href="//www.instagram.com/beerbook.review/">
+          <img src="src/assets/instagram.png" id="instagram" />
+        </a>
+        <a target="_blank" href="//www.facebook.com">
+          <img src="src/assets/facebook.png" id="facebook" />
+        </a>
+        <a target="_blank" href="//www.twitter.com">
+          <img src="src/assets/twitter.png" id="twitter" />
+        </a>
+      </div>
+    </section>
+    <!-- Bas de page -->
+    <footer id="bas_page">
+        <p class="text_bas_page">Ludovic Mareemootoo - Matteo Munari - Kelan Solomon</p>
+        <p class="text_bas_page">2017 - Sismondi</p>
+    </footer>
   </body>
-  <footer id="bas_page">
-      <p class="text_bas_page">Ludovic Mareemootoo - Matteo Munari - Kelan Solomon</p>
-      <p class="text_bas_page">2017 - Sismondi</p>
-  </footer>
+
+
 
   <script>
+
     var note = function getIndex() {
-    document.getElementById("mySelect").selectedIndex;}
-
-+ note;
-
+      document.getElementById("mySelect").selectedIndex;
+    }
+    + note;
 
   </script>
+
   <style>
 
-
-#DrGabs {
-  font-family: Segoe;
-  background-color:#f2f2f2;
-  font-size: 20px;
+  /* Page générale */
+  #DrGabs {
+    font-family: Segoe;
+    background-color:#f2f2f2;
+    font-size: 20px;
   }
-#menu {
+  /* Menu */
+  #menu {
     position: absolute; top: 230px;
     width: auto;
     padding: 0px 0px 0px 10px;
@@ -119,101 +121,98 @@
     border: none;
     border-radius: 0px 7px 7px 0px;
   }
-
-#menu-titre {
+  /* Titre du menu */
+  #menu-titre {
     padding-left: 10px;
     letter-spacing: 3px;
   }
-#resau_sociaux {
+  /* Résaux sociaux */
+  #resau_sociaux {
     position: fixed; right: 10px; top: 10px;
   }
-
-#instagram {
+  /* Icône Instagram */
+  #instagram {
     height: 30px;
   }
-#facebook {
+  /* Icône Facebook */
+  #facebook {
     height: 30px;
   }
-#twitter {
+  /* Icône Twitter */
+  #twitter {
     height: 30px;
   }
-.menu-text {
+  /* Texte du menu*/
+  .menu-text {
     color: black;
   }
-
-h1 {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.description {
-  text-aline: center;
-  background: #F0F8FF ;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: black;
-
-}
-
-.soustitre {
-  font-family: "Arial Black", Gadget, sans-serif;
-}
-
-IMG.image{
-  position: static;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -150px;
-  border-style: solid;
-  border-color: #F8F8FF;
-  border-width: 10px;
-  border-radius: 5px;
-  z-index: 2;
- }
-
-IMG.cover{
-  height: 600px;
-  width: 100%;
-  z-index: -1:
-}
-
-
-#logo {
-  position: absolute; top: 20px; left: 20px;
-  height: 200px ;
-  margin-right: auto
-  margin-left: auto;
-}
-
-.form-control {
+  /* Titre */
+  h1 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Description */
+  .description {
+    text-aline: center;
+    background: #F0F8FF ;
     border-radius: 5px;
-    font-size: 15px;}
-
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+  }
+  /* Catégories */
+  .soustitre {
+    font-family: "Arial Black", Gadget, sans-serif;
+  }
+  /* Image de fond */
+  IMG.image{
+    position: static;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -150px;
+    border-style: solid;
+    border-color: #F8F8FF;
+    border-width: 10px;
+    border-radius: 5px;
+    z-index: 2;
+  }
+  /* Filtre sur l'image */
+  IMG.cover{
+    height: 600px;
+    width: 100%;
+    z-index: -1:
+  }
+  /* Logo */
+  #logo {
+    position: absolute; top: 20px; left: 20px;
+    height: 200px ;
+    margin-right: auto
+    margin-left: auto;
+  }
+  /* Note */
+  .form-control {
+    border-radius: 5px;
+    font-size: 15px;
+  }
+  /* Note */
  .form-horizontal {
     display: inline-block;
-    width: 80%;}
-
-#bas_page {
+    width: 80%;
+  }
+  /* Bas de page */
+  #bas_page {
     text-align: center;
-    background-color: white;}
-
-.well{
+    background-color: white;
+  }
+  /* Encadrés */
+  .well{
     background-color: white;
     width: 85%;
     margin-left: auto;
     margin-right: auto;
-}
-#note{
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-
-
+  }
 
   </style>
 </html>
