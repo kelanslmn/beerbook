@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>PG</title>
   </head>
-  <body>
 
+  <body>
+    <!-- Résaux sociaux -->
     <div id="resau_sociaux">
       <a target="_blank" href="//www.instagram.com/beerbook.review/">
         <img src="src/assets/instagram.png" id="instagram" />
@@ -21,17 +23,18 @@
         <img src="src/assets/twitter.png" id="twitter" />
       </a>
     </div>
-
+    <!-- Section de la page sur la PG -->
     <div id= "PG">
+      <!-- Logo -->
       <a href="index.html" >
         <img src= "src/assets/beerbook.png" id= "logo"/>
       </a>
-
+      <!-- Images -->
       <img class="cover" src="src/assets/coop.jpg" />
       <img class="image" src= "src/assets/pg.png" />
-
+      <!-- Titre -->
       <h1 style=" width: 600px" id="titre"> Bière Prix Garantie (PG) </h1>
-
+      <!-- Description -->
       <u id=" description">
         <a class="soustitre"> Description: </a><strong> Une bière blonde, autrement connue sous le nom de "PG" ( pronnoncé  "Pidji") est la bière officiel du Collège Sismondi a Genève.</strong> <br>
         <a class="soustitre">Prix:</a>  0.50 CHF <br>
@@ -39,7 +42,7 @@
         <a class="soustitre">Classification: </a> Bière blonde (pale lager)<br>
         <a class="soustitre">Revue:</a>  Peut-etre pas le meilleur goût mais rapport quantité-qualité-prix 10/10
       </u>
-
+      <!-- Commentaires -->
       <form class="form-horizontal">
         <div class="form-group">
           <label class="control-label col-sm-2" for="comment">Commentaires:</label>
@@ -48,7 +51,7 @@
           </div>
         </div>
       </form>
-
+      <!-- Note -->
       <form>
         Mets une revue a cette biere! Pensez au prix et a la qualité.
         <select id="mySelect">
@@ -66,9 +69,7 @@
         <input type="button" onclick="getIndex()" value="Submit">
       </form>
     </div>
-
-    <p id="note1"></p>
-
+    <!-- Menu -->
     <div class="container" id="menu">
       <h2 id="menu-titre">Menu</h2>
       <ul class="nav nav-pills nav-stacked navbar-left" role="tablist">
@@ -85,19 +86,7 @@
         <li ><a class="menu-text" href="mailto:beerbook.review@gmail.com">Nous contacter</a></li>
       </ul>
     </div>
-
-    <div id="resau_sociaux">
-      <a target="_blank" href="//www.instagram.com/beerbook.review/">
-        <img src="src/assets/instagram.png" id="instagram" />
-      </a>
-      <a target="_blank" href="//www.facebook.com">
-        <img src="src/assets/facebook.png" id="facebook" />
-      </a>
-      <a target="_blank" href="//www.twitter.com">
-        <img src="src/assets/twitter.png" id="twitter" />
-      </a>
-    </div>
-
+    <!-- Bas de page -->
     <footer id="bas_page">
         <p class="text_bas_page">Ludovic Mareemootoo - Matteo Munari - Kelan Solomon</p>
         <p class="text_bas_page">2017 - Sismondi</p>
@@ -106,6 +95,7 @@
 
 
   <script>
+  
     var note = function getIndex() {
       document.getElementById("mySelect").selectedIndex;
     }
