@@ -42,19 +42,19 @@
       <!-- Note -->
       <form id="note">
         Mets une revue a cette biere! Pensez au prix et a la qualité.
-      <select id="mySelect">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-        <option>6</option>
-        <option>7</option>
-        <option>8</option>
-        <option>9</option>
-        <option>10</option>
-      </select>
-        <input type="button" onclick="getIndex()" value="Submit">
+        <select id="mySelect">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+        </select>
+        <input type="button" onclick="Moy()" value="Submit">
       </form>
       <!-- Menu -->
       <div class="container" id="menu">
@@ -96,11 +96,17 @@
 
 
   <script>
-
-    var note = function getIndex() {
-      document.getElementById("mySelect").selectedIndex;
+    // Fonction Index
+    function getIndex() {
+    var x = document.getElementById("mySelect").selectedIndex;
+    var y = document.getElementById("mySelect").options;
+    return ( y[x].index + 1) ;
     }
-    + note;
+    // Fonction Moyenne
+    function Moy() {
+    var moy = (9 + getIndex())/2;
+    alert("merci d'avoir voté, la note est actuellement à " + moy);}
+
 
   </script>
 
@@ -146,11 +152,13 @@
   .menu-text {
     color: black;
   }
+
   /* Titre */
-  h1 {
+  #titre {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    font-size: 50px;
   }
   /* Description */
   .description {
@@ -201,6 +209,10 @@
     display: inline-block;
     width: 80%;
   }
+  #note{
+    margin-left: auto;
+    margin-right: auto;
+  }
   /* Bas de page */
   #bas_page {
     text-align: center;
@@ -212,7 +224,9 @@
     width: 85%;
     margin-left: auto;
     margin-right: auto;
-  }
+}
+
+
 
   </style>
 </html>

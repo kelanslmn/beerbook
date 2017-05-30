@@ -54,7 +54,7 @@
           <option>9</option>
           <option>10</option>
         </select>
-        <input type="button" onclick="getIndex()" value="Submit">
+        <input type="button" onclick="Moy()" value="Submit">
       </form>
       <!-- Menu -->
       <div class="container" id="menu">
@@ -94,10 +94,16 @@
   </body>
 
   <script>
-    var note = function getIndex() {
-    document.getElementById("mySelect").selectedIndex;}
-
-+ note;
+    // Fonction Index
+    function getIndex() {
+    var x = document.getElementById("mySelect").selectedIndex;
+    var y = document.getElementById("mySelect").options;
+    return ( y[x].index + 1) ;
+    }
+    // Fonction Moyenne
+    function Moy() {
+    var moy = (1.5 + getIndex())/2;
+    alert("merci d'avoir voté, la note est actuellement à " + moy);}
 
 
   </script>
