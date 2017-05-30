@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -10,16 +11,18 @@
   </head>
 
   <body>
+    <!-- Section de la page -->
     <section id= "DrGabs">
+      <!-- Logo -->
       <a href="index.html" >
         <img src= "src/assets/beerbook.png" id= "logo"/>
       </a>
-
+      <!-- Images -->
       <img class="cover" src="src/assets/drgabs.jpg" />
       <img class="image" src= "src/assets/docgabs_tempete.jpg" height="300px" />
-
+      <!-- Titre -->
       <h1 style=" width: 600px" id="titre"> DrGabs </h1>
-
+      <!-- Description -->
       <section class="well" id="description">
         <a class="soustitre"> Description: </a> <strong>Une biere artisanal Suisse faite à Lausanne. Plusieurs sortes de bières sont a disposition: la houleuse, le chameau, Farandole, Tempête, Ténébreuse, il y a une bière pour tout les goûts. Pas une bière de fête mais une bière a aprécier entre amis.   </strong> <br>
         <a class="soustitre">Prix:</a>  3.30 CHF <br>
@@ -27,7 +30,7 @@
         <a class="soustitre">Classification: </a> divers<br>
         <a class="soustitre">Revue:</a>   Une bière dont le prix vaux la qualité. 9/10
       </section>
-
+      <!-- Commentaires -->
       <form class="form-horizontal">
         <div class="form-group">
           <label class="control-label col-sm-2" for="comment">Commentaires:</label>
@@ -36,7 +39,7 @@
             </div>
         </div>
       </form>
-
+      <!-- Note -->
       <form id="note">
         Mets une revue a cette biere! Pensez au prix et a la qualité.
         <select id="mySelect">
@@ -53,7 +56,7 @@
         </select>
         <input type="button" onclick="getIndex()" value="Submit">
       </form>
-
+      <!-- Menu -->
       <div class="container" id="menu">
         <h2 id="menu-titre">Menu</h2>
         <ul class="nav nav-pills nav-stacked navbar-left" role="tablist">
@@ -70,7 +73,7 @@
           <li ><a class="menu-text" href="mailto:beerbook.review@gmail.com">Nous contacter</a></li>
         </ul>
       </div>
-
+      <!-- Résaux sociaux -->
       <div id="resau_sociaux">
         <a target="_blank" href="//www.instagram.com/beerbook.review/">
           <img src="src/assets/instagram.png" id="instagram" />
@@ -83,7 +86,7 @@
         </a>
       </div>
     </section>
-
+    <!-- Bas de page -->
     <footer id="bas_page">
         <p class="text_bas_page">Ludovic Mareemootoo - Matteo Munari - Kelan Solomon</p>
         <p class="text_bas_page">2017 - Sismondi</p>
@@ -93,10 +96,12 @@
 
 
   <script>
+
     var note = function getIndex() {
       document.getElementById("mySelect").selectedIndex;
     }
     + note;
+    
   </script>
 
   <style>
