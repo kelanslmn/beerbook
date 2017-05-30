@@ -2,10 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-
-
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -14,34 +11,23 @@
   </head>
   <body>
 
-  <div id="resau_sociaux">
-        <a target="_blank" href="//www.instagram.com/beerbook.review/">
-          <img src="src/assets/instagram.png" id="instagram" />
-        </a>
-        <a target="_blank" href="//www.facebook.com">
-          <img src="src/assets/facebook.png" id="facebook" />
-        </a>
-        <a target="_blank" href="//www.twitter.com">
-          <img src="src/assets/twitter.png" id="twitter" />
-        </a>
-      </div>
-
-
-  <div id= "PG">
+    <section id= "PG">
       <a href="index.html" >
         <img src= "src/assets/beerbook.png" id= "logo"/>
       </a>
       <img class="cover" src="src/assets/coop.jpg" />
       <img class="image" src= "src/assets/pg.png" />
       <br>
-      <h1 style=" width: 600px" id="titre"> Bière Prix Garantie (PG) </h1>
-      <u id=" description">
-        <u> </u><a class="soustitre"> Description: </a> </u> <strong> Une bière blonde, autrement connue sous le nom de "PG" ( pronnoncé  "Pidji") est la bière officiel du Collège Sismondi a Genève.</strong> <br>
+      <h1 style=" width: 600px" id="titre"> PG </h1>
+      <section class="well" id="description">
+         <u> </u><a class="soustitre"> Description: </a> </u> <strong> Une bière blonde, autrement connue sous le nom de "PG" ( pronnoncé  "Pidji") est la bière officiel du Collège Sismondi a Genève.</strong> <br>
         <a class="soustitre">Prix:</a>  0.50 CHF <br>
         <a class="soustitre">Provenance:</a>  Coop <br>
         <a class="soustitre">Classification: </a> Bière blonde (pale lager)<br>
         <a class="soustitre">Revue:</a>  Peut-etre pas le meilleur goût mais rapport quantité-qualité-prix 10/10
-      </p>
+      </section>
+
+
 
       <form class="form-horizontal">
       <div class="form-group">
@@ -51,7 +37,7 @@
         </div>
       </div>
       </form>
-      <form>
+      <form id="note">
         Mets une revue a cette biere! Pensez au prix et a la qualité.
        <select id="mySelect">
          <option>1</option>
@@ -67,41 +53,42 @@
        </select>
         <input type="button" onclick="getIndex()" value="Submit">
       </form>
+
     </div>
-  <p id="note1"></p>
+    <div class="container" id="menu">
+      <h2 id="menu-titre">Menu</h2>
+      <ul class="nav nav-pills nav-stacked navbar-left" role="tablist">
+        <li ><a class="menu-text" href="index.html">Page d'accueil</a></li>
 
-  <div class="container" id="menu">
-    <h2 id="menu-titre">Menu</h2>
-    <ul class="nav nav-pills nav-stacked navbar-left" role="tablist">
-      <li ><a class="menu-text" href="index.html">Page d'accueil</a></li>
+        <li><a class="menu-text" data-toggle="dropdown" href="#">Nos bières <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="PG.html">PG</a></li>
+            <li><a href="Gralsburg.html">Gralsburg</a></li>
+            <li><a href="DrGabs.html">Dr. Gabs</a></li>
+            <li><a href="Heineken.html">Heineken</a></li>
+          </ul>
+        </li>
 
-      <li><a class="menu-text" data-toggle="dropdown" href="#">Nos bières <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="PG.html">PG</a></li>
-          <li><a href="Gralsburg.html">Gralsburg</a></li>
-          <li><a href="DrGabs.html">Dr. Gabs</a></li>
-          <li><a href="Heineken.html">Heineken</a> </li>
-        </ul>
-      </li>
-
-      <li ><a class="menu-text" href="propositions.html">Vos propositions</a></li>
-      <li ><a class="menu-text" href="mailto:beerbook.review@gmail.com">Nous contacter</a></li>
-    </ul>
-  </div>
+        <li ><a class="menu-text" href="propositions.html">Vos propositions</a></li>
+        <li ><a class="menu-text" href="mailto:beerbook.review@gmail.com">Nous contacter</a></li>
+      </ul>
+    </div>
 
   <div id="resau_sociaux">
-          <a target="_blank" href="//www.instagram.com/beerbook.review/">
-            <img src="src/assets/instagram.png" id="instagram" />
-          </a>
-          <a target="_blank" href="//www.facebook.com">
-            <img src="src/assets/facebook.png" id="facebook" />
-          </a>
-          <a target="_blank" href="//www.twitter.com">
-            <img src="src/assets/twitter.png" id="twitter" />
-          </a>
-  </div>
+    <a target="_blank" href="//www.instagram.com/beerbook.review/">
+      <img src="src/assets/instagram.png" id="instagram" />
+    </a>
+    <a target="_blank" href="//www.facebook.com">
+      <img src="src/assets/facebook.png" id="facebook" />
+    </a>
+    <a target="_blank" href="//www.twitter.com">
+      <img src="src/assets/twitter.png" id="twitter" />
+    </a>
+</div>
+      </section>
 
 
+  <p id="note1"></p>
   </body>
   <footer id="bas_page">
       <p class="text_bas_page">Ludovic Mareemootoo - Matteo Munari - Kelan Solomon</p>
@@ -121,10 +108,10 @@
 
 #PG {
   font-family: Segoe;
-  background-color:white;
+  background-color:#f2f2f2;
   font-size: 20px;
   }
-  #menu {
+#menu {
     position: absolute; top: 230px;
     width: auto;
     padding: 0px 0px 0px 10px;
@@ -132,25 +119,25 @@
     border: none;
     border-radius: 0px 7px 7px 0px;
   }
-  #menu-titre {
+
+#menu-titre {
     padding-left: 10px;
     letter-spacing: 3px;
   }
-  #resau_sociaux {
+#resau_sociaux {
     position: fixed; right: 10px; top: 10px;
   }
 
-  #instagram {
+#instagram {
     height: 30px;
   }
-  #facebook {
+#facebook {
     height: 30px;
   }
-  #twitter {
+#twitter {
     height: 30px;
   }
-
-  .menu-text {
+.menu-text {
     color: black;
   }
 
@@ -158,15 +145,16 @@ h1 {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  border-style: solid;
-  border-width: 5px;
-  border-radius: 5px;
-  border-color: rgba(0,0,255,0.3);
-
 }
 
-#description{
-  text-aline: center:
+.description {
+  text-aline: center;
+  background: #F0F8FF ;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+
 }
 
 .soustitre {
@@ -199,11 +187,6 @@ IMG.cover{
   margin-right: auto
   margin-left: auto;
 }
-#rectangle {
-    width:200px;
-    height:100px;
-    background: ;
-}
 
 .form-control {
     border-radius: 5px;
@@ -216,40 +199,27 @@ IMG.cover{
 #bas_page {
     text-align: center;
     background-color: white;}
-    #menu {
-    position: absolute; top: 230px;
-    width: auto;
-    padding: 0px 0px 0px 10px;
-    background-color: grey;
-    border: none;
-    border-radius: 0px 7px 7px 0px;
-  }
 
-  #menu-titre {
-    padding-left: 10px;
-    letter-spacing: 3px;
-  }
-
-  .menu-text {
-    color: black;
-  }
+.well{
+    background-color: white;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#note{
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
- #resau_sociaux {
-    position: fixed; right: 10px; top: 10px;
-  }
-
-  #instagram {
-    height: 30px;
-  }
-  #facebook {
-    height: 30px;
-  }
-  #twitter {
-    height: 30px;
-  }
 
 
 
   </style>
 </html>
+
+
+
+
+
+
