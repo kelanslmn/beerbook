@@ -1,64 +1,36 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Heineken</title>
 
-
   </head>
   <body>
 
-  <div id="resau_sociaux">
-        <a target="_blank" href="//www.instagram.com/beerbook.review/">
-          <img src="src/assets/instagram.png" id="instagram" />
-        </a>
-        <a target="_blank" href="//www.facebook.com">
-          <img src="src/assets/facebook.png" id="facebook" />
-        </a>
-        <a target="_blank" href="//www.twitter.com">
-          <img src="src/assets/twitter.png" id="twitter" />
-        </a>
-      </div>
-
-<div class="container" id="menu">
-      <h2 id="menu-titre">Menu</h2>
-      <ul class="nav nav-pills nav-stacked navbar-left" role="tablist">
-        <li ><a class="menu-text" href="index.html">Page d'accueil</a></li>
-
-        <li><a class="menu-text" data-toggle="dropdown" href="#">Nos bières <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="PG.html">PG</a></li>
-            <li><a href="Gralsburg.html">Gralsburg</a></li>
-            <li><a href="DrGabs.html">Dr. Gabs</a></li>
-            <li><a href="Heineken.html">Heineken</a></li>
-          </ul>
-        </li>
-
-        <li ><a class="menu-text" href="propositions.html">Vos propositions</a></li>
-        <li ><a class="menu-text" href="mailto:beerbook.review@gmail.com">Nous contacter</a></li>
-      </ul>
-    </div>
-    <div id= "Heineken">
+    <section id= "Heineken">
       <a href="index.html" >
         <img src= "src/assets/beerbook.png" id= "logo"/>
       </a>
-      <img class="cover" src="src/assets/coop.jpg" height="768" width="1024"/>
+       <img class="cover" src="src/assets/coop.jpg" height="768" width="1024"/>
         <img class="image" src="src/assets/1340-1-heineken-biere.jpg" height="300"/><br>
-      <h1 style=" width: 600px" id="titre"> Bière Heineken </h1>
-      <u id=" description">
-        <u> </u><a class="soustitre"> Description: </a> </u> <strong> Une bière blonde, plus particulièrement connue pour être la bière officielle des soirées foot,
+      <br>
+      <h1 style=" width: 600px" id="titre"> Heineken </h1>
+      <section class="well" id="description">
+         <u> </u><a class="soustitre"> Description: </a> </u> <strong> Une bière blonde, plus particulièrement connue pour être la bière officielle des soirées foot,
     notamment lors de la ligue des champions ou lors de la coupe du monde.</strong> <br>
        <a class="soustitre">Prix pour 100cl:</a>  4.15 CHF <br>   <a class="soustitre">Provenance:</a> Pays-bas <br>    <a class="soustitre">Classification: </a>
 Bière blonde (pale lager)
 
 <br>  <a class="soustitre">Review:</a>   Une bière agréable à boire (taux d'alcool: 4%) lors d'événements festifs ou lors de parties intenses de beer-pong. Mais peut-être un petit peu cher pour la qualité fournie. 5.5/10
 
+      </section>
 
-      </p>
+
 
       <form class="form-horizontal">
       <div class="form-group">
@@ -68,7 +40,7 @@ Bière blonde (pale lager)
         </div>
       </div>
       </form>
-      <form>
+      <form id="note">
         Mets une revue a cette biere! Pensez au prix et a la qualité.
        <select id="mySelect">
          <option>1</option>
@@ -86,6 +58,39 @@ Bière blonde (pale lager)
       </form>
 
     </div>
+    <div class="container" id="menu">
+      <h2 id="menu-titre">Menu</h2>
+      <ul class="nav nav-pills nav-stacked navbar-left" role="tablist">
+        <li ><a class="menu-text" href="index.html">Page d'accueil</a></li>
+
+        <li><a class="menu-text" data-toggle="dropdown" href="#">Nos bières <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="PG.html">PG</a></li>
+            <li><a href="Gralsburg.html">Gralsburg</a></li>
+            <li><a href="DrGabs.html">Dr. Gabs</a></li>
+            <li><a href="Heineken.html">Heineken</a></li>
+          </ul>
+        </li>
+
+        <li ><a class="menu-text" href="propositions.html">Vos propositions</a></li>
+        <li ><a class="menu-text" href="mailto:beerbook.review@gmail.com">Nous contacter</a></li>
+      </ul>
+    </div>
+
+  <div id="resau_sociaux">
+    <a target="_blank" href="//www.instagram.com/beerbook.review/">
+      <img src="src/assets/instagram.png" id="instagram" />
+    </a>
+    <a target="_blank" href="//www.facebook.com">
+      <img src="src/assets/facebook.png" id="facebook" />
+    </a>
+    <a target="_blank" href="//www.twitter.com">
+      <img src="src/assets/twitter.png" id="twitter" />
+    </a>
+</div>
+      </section>
+
+
   <p id="note1"></p>
   </body>
   <footer id="bas_page">
@@ -106,24 +111,53 @@ Bière blonde (pale lager)
 
 #Heineken {
   font-family: Segoe;
-  background-color:white;
+  background-color:#f2f2f2;
   font-size: 20px;
   }
+#menu {
+    position: absolute; top: 230px;
+    width: auto;
+    padding: 0px 0px 0px 10px;
+    background-color: grey;
+    border: none;
+    border-radius: 0px 7px 7px 0px;
+  }
 
+#menu-titre {
+    padding-left: 10px;
+    letter-spacing: 3px;
+  }
+#resau_sociaux {
+    position: fixed; right: 10px; top: 10px;
+  }
+
+#instagram {
+    height: 30px;
+  }
+#facebook {
+    height: 30px;
+  }
+#twitter {
+    height: 30px;
+  }
+.menu-text {
+    color: black;
+  }
 
 h1 {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  border-style: solid;
-  border-width: 5px;
-  border-radius: 5px;
-  border-color: rgba(0,0,255,0.3);
-
 }
 
-#description{
-  text-aline: center:
+.description {
+  text-aline: center;
+  background: #F0F8FF ;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+
 }
 
 .soustitre {
@@ -156,12 +190,6 @@ IMG.cover{
   margin-right: auto
   margin-left: auto;
 }
-#rectangle {
-    width:200px;
-    height:100px;
-    background: ;
-}
-
 
 .form-control {
     border-radius: 5px;
@@ -174,37 +202,21 @@ IMG.cover{
 #bas_page {
     text-align: center;
     background-color: white;}
- #menu {
-    position: absolute; top: 230px;
-    width: auto;
-    padding: 0px 0px 0px 10px;
-    background-color: grey;
-    border: none;
-    border-radius: 0px 7px 7px 0px;
-  }
 
-  #menu-titre {
-    padding-left: 10px;
-    letter-spacing: 3px;
-  }
+.well{
+    background-color: white;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#note{
+    margin-left: auto;
+    margin-right: auto;
+}
 
-  .menu-text {
-    color: black;
-  }
 
- #resau_sociaux {
-    position: fixed; right: 10px; top: 10px;
-  }
 
-  #instagram {
-    height: 30px;
-  }
-  #facebook {
-    height: 30px;
-  }
-  #twitter {
-    height: 30px;
-  }
+
 
   </style>
 </html>

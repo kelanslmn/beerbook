@@ -11,20 +11,8 @@
   </head>
 
   <body>
-    <!-- Résaux sociaux -->
-    <div id="resau_sociaux">
-      <a target="_blank" href="//www.instagram.com/beerbook.review/">
-        <img src="src/assets/instagram.png" id="instagram" />
-      </a>
-      <a target="_blank" href="//www.facebook.com">
-        <img src="src/assets/facebook.png" id="facebook" />
-      </a>
-      <a target="_blank" href="//www.twitter.com">
-        <img src="src/assets/twitter.png" id="twitter" />
-      </a>
-    </div>
     <!-- Section de la page sur la PG -->
-    <div id= "PG">
+    <section id= "PG">
       <!-- Logo -->
       <a href="index.html" >
         <img src= "src/assets/beerbook.png" id= "logo"/>
@@ -35,13 +23,13 @@
       <!-- Titre -->
       <h1 style=" width: 600px" id="titre"> Bière Prix Garantie (PG) </h1>
       <!-- Description -->
-      <u id=" description">
+      <section class="well" id="description">
         <a class="soustitre"> Description: </a><strong> Une bière blonde, autrement connue sous le nom de "PG" ( pronnoncé  "Pidji") est la bière officiel du Collège Sismondi a Genève.</strong> <br>
         <a class="soustitre">Prix:</a>  0.50 CHF <br>
         <a class="soustitre">Provenance:</a>  Coop <br>
         <a class="soustitre">Classification: </a> Bière blonde (pale lager)<br>
         <a class="soustitre">Revue:</a>  Peut-etre pas le meilleur goût mais rapport quantité-qualité-prix 10/10
-      </u>
+      </section>
       <!-- Commentaires -->
       <form class="form-horizontal">
         <div class="form-group">
@@ -68,24 +56,36 @@
         </select>
         <input type="button" onclick="getIndex()" value="Submit">
       </form>
-    </div>
-    <!-- Menu -->
-    <div class="container" id="menu">
-      <h2 id="menu-titre">Menu</h2>
-      <ul class="nav nav-pills nav-stacked navbar-left" role="tablist">
-        <li ><a class="menu-text" href="index.html">Page d'accueil</a></li>
-        <li><a class="menu-text" data-toggle="dropdown" href="#">Nos bières <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="PG.html">PG</a></li>
-            <li><a href="Gralsburg.html">Gralsburg</a></li>
-            <li><a href="DrGabs.html">Dr. Gabs</a></li>
-            <li><a href="Heineken.html">Heineken</a> </li>
-          </ul>
-        </li>
-        <li ><a class="menu-text" href="propositions.html">Vos propositions</a></li>
-        <li ><a class="menu-text" href="mailto:beerbook.review@gmail.com">Nous contacter</a></li>
-      </ul>
-    </div>
+      <!-- Menu -->
+      <div class="container" id="menu">
+        <h2 id="menu-titre">Menu</h2>
+        <ul class="nav nav-pills nav-stacked navbar-left" role="tablist">
+          <li ><a class="menu-text" href="index.html">Page d'accueil</a></li>
+          <li><a class="menu-text" data-toggle="dropdown" href="#">Nos bières <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="PG.html">PG</a></li>
+              <li><a href="Gralsburg.html">Gralsburg</a></li>
+              <li><a href="DrGabs.html">Dr. Gabs</a></li>
+              <li><a href="Heineken.html">Heineken</a> </li>
+            </ul>
+          </li>
+          <li ><a class="menu-text" href="propositions.html">Vos propositions</a></li>
+          <li ><a class="menu-text" href="mailto:beerbook.review@gmail.com">Nous contacter</a></li>
+        </ul>
+      </div>
+      <!-- Résaux sociaux -->
+      <div id="resau_sociaux">
+        <a target="_blank" href="//www.instagram.com/beerbook.review/">
+          <img src="src/assets/instagram.png" id="instagram" />
+        </a>
+        <a target="_blank" href="//www.facebook.com">
+          <img src="src/assets/facebook.png" id="facebook" />
+        </a>
+        <a target="_blank" href="//www.twitter.com">
+          <img src="src/assets/twitter.png" id="twitter" />
+        </a>
+      </div>
+    </section>
     <!-- Bas de page -->
     <footer id="bas_page">
         <p class="text_bas_page">Ludovic Mareemootoo - Matteo Munari - Kelan Solomon</p>
@@ -95,7 +95,7 @@
 
 
   <script>
-  
+
     var note = function getIndex() {
       document.getElementById("mySelect").selectedIndex;
     }
@@ -110,22 +110,57 @@
   /* Page générale */
   #PG {
     font-family: Segoe;
-    background-color:white;
+    background-color:#f2f2f2;
     font-size: 20px;
+  }
+  /* Menu */
+  #menu {
+    position: absolute; top: 230px;
+    width: auto;
+    padding: 0px 0px 0px 10px;
+    background-color: grey;
+    border: none;
+    border-radius: 0px 7px 7px 0px;
+  }
+  /* Titre du menu */
+  #menu-titre {
+    padding-left: 10px;
+    letter-spacing: 3px;
+  }
+  /* Résaux sociaux */
+  #resau_sociaux {
+    position: fixed; right: 10px; top: 10px;
+  }
+  /* Icône Instagram */
+  #instagram {
+    height: 30px;
+  }
+  /* Icône Facebook */
+  #facebook {
+    height: 30px;
+  }
+  /* Icône Twitter */
+  #twitter {
+    height: 30px;
+  }
+  /* Texte du menu*/
+  .menu-text {
+    color: black;
   }
   /* Titre */
   h1 {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 5px;
-    border-color: rgba(0,0,255,0.3);
   }
   /* Description */
-  #description{
-    text-aline: center:
+  .description {
+    text-aline: center;
+    background: #F0F8FF ;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
   }
   /* Catégories */
   .soustitre {
@@ -158,18 +193,12 @@
     margin-left: auto;
   }
   /* Note */
-  #rectangle {
-    width:200px;
-    height:100px;
-    background: ;
-  }
-  /* Note */
   .form-control {
     border-radius: 5px;
     font-size: 15px;
   }
   /* Note */
-  .form-horizontal {
+ .form-horizontal {
     display: inline-block;
     width: 80%;
   }
@@ -178,40 +207,12 @@
     text-align: center;
     background-color: white;
   }
-  /* Menu */
-  #menu {
-    position: absolute; top: 230px;
-    width: auto;
-    padding: 0px 0px 0px 10px;
-    background-color: grey;
-    border: none;
-    border-radius: 0px 7px 7px 0px;
+  /* Encadrés */
+  .well{
+    background-color: white;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
   }
-  /* Titre du menu */
-  #menu-titre {
-    padding-left: 10px;
-    letter-spacing: 3px;
-  }
-  /* Texte du menu*/
-  .menu-text {
-    color: black;
-  }
-  /* Résaux sociaux */
-  #resau_sociaux {
-    position: fixed; right: 10px; top: 10px;
-  }
-  /* Icône Instagram */
-  #instagram {
-    height: 30px;
-  }
-  /* Icône Facebook */
-  #facebook {
-    height: 30px;
-  }
-  /* Icône Twitter */
-  #twitter {
-    height: 30px;
-  }
-
   </style>
 </html>
