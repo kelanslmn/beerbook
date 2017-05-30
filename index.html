@@ -81,6 +81,7 @@
 
 
       </section>
+      <button onclick="myFunction()" type="button" class="btn">Clickez pour apprendre quelque chose de nouveau!</button>
 
 
       <footer id="bas_page">
@@ -93,19 +94,12 @@
 </body>
 
 <script>
-
-  function changeImage(a) {
-    var c = document.getElementById("rating").children;
-    for(i<5;i=0;i++){
-      c[i].src=a;
-      }
-    }
-  function normalImage(a) {
-    var c = document.getElementById("rating").children;
-    for(i<5;i=0;i++){
-      c[i].src=a;
-      }
-    }
+function myFunction() {
+    var facts= [ "les Babyloniens furent les premiers à brasser de la bière", "l'eau est le principal composant de la bière", "il y a constamment 0.7% de la population qui est bourré...", "le pays où on boit le plus de bière est la République Tchèque", "85 à 90% de la bière consommée au Canada est fabriquée au Canada"," un suisse en moyenne boit environ 8,1 litres d'alcool par an, petit joueur!"  ]
+    var len = facts.length
+    var num = Math.floor((Math.random() * len))
+    var x = facts[num]
+    alert("Saviez-vous que " + x +" ?");}
 
 </script>
 
@@ -236,6 +230,13 @@
 
   .menu-text {
     color: black;
+  }
+  .btn {
+      position: absolute;
+      top: 10px;
+      left:300px;
+
+
   }
 
 
