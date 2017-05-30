@@ -4,49 +4,45 @@
     <meta charset="utf-8">
     <title>Beerbook Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
     <div id="app">
-
+    <!-- Menu -->
     <div class="container" id="menu">
       <h2 id="menu-titre">Menu</h2>
       <ul class="nav nav-pills nav-stacked navbar-left" role="tablist">
         <li ><a class="menu-text" href="index.html">Page d'accueil</a></li>
-
         <li><a class="menu-text" data-toggle="dropdown" href="#">Nos bières <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="PG.html">PG</a></li>
             <li><a href="Gralsburg.html">Gralsburg</a></li>
-
             <li><a href="DrGabs.html">Dr. Gabs</a></li>
-
             <li><a href="Heineken.html">Heineken</a></li>
-          </ul>
-        </li>
-
+          </ul></li>
         <li ><a class="menu-text" href="propositions.html">Vos propositions</a></li>
         <li ><a class="menu-text" href="mailto:beerbook.review@gmail.com">Nous contacter</a></li>
       </ul>
     </div>
-
+      <!-- Titre -->
       <h1 id="titre">BeerBook</h1>
-
+      <!-- Logo -->
       <a href="index.html" >
         <img src= "src/assets/beerbook.png" id= "logo"/>
       </a>
-
+      <!-- Baree de recherche -->
       <form>
         <input id="search" type="text" name="search" placeholder="Rechercher ...">
         <button id="button" type="button">Recherche</button>
       </form>
-
+      <!-- Decription -->
       <div id="description">
         <h2 > Bienvenue sur la page "Beerbook"! Ce site héberge des revues de bières afin de vous en apprendre plus et de partager votre savoir sur cette boisson. N'hésitez pas à partager et laisser des commentaires! </h2>
       </div>
-
+      <!-- Liens résaux sociaux -->
       <div id="resau_sociaux">
         <a target="_blank" href="//www.instagram.com/beerbook.review/">
           <img src="src/assets/instagram.png" id="instagram" />
@@ -58,32 +54,30 @@
           <img src="src/assets/twitter.png" id="twitter" />
         </a>
       </div>
-
+      <!-- Section d'informations -->
       <section class="well" id="informations">
         <h1>Bière du mois</h1>
         <p>PG</p>
         <img id="photo" src="src/assets/pg.png"/>
         <p noteGeneral> 10/10 </p>
         <p id=note> Choisissez votre note :</p>
-
         <ul class="pager">
-         <li><a href="#">1</a></li>
-         <li><a href="#">2</a></li>
-         <li><a href="#">3</a></li>
-         <li><a href="#">4</a></li>
-         <li><a href="#">5</a></li>
-         <li><a href="#">6</a></li>
-         <li><a href="#">7</a></li>
-         <li><a href="#">8</a></li>
-         <li><a href="#">9</a></li>
-         <li><a href="#">10</a></li>
+          <li><a href="#" onclick="vote()">1</a></li>
+          <li><a href="#" onclick="vote()">2</a></li>
+          <li><a href="#" onclick="vote()">3</a></li>
+          <li><a href="#" onclick="vote()">4</a></li>
+          <li><a href="#" onclick="vote()">5</a></li>
+          <li><a href="#" onclick="vote()">6</a></li>
+          <li><a href="#" onclick="vote()">7</a></li>
+          <li><a href="#" onclick="vote()">8</a></li>
+          <li><a href="#" onclick="vote()">9</a></li>
+          <li><a href="#" onclick="vote()">10</a></li>
        </ul>
-
-
       </section>
-      <button onclick="myFunction()" type="button" class="btn">Cliquez pour apprendre quelque chose de nouveau sur la bière!</button>
 
-
+      <!-- Bouton le saviez-vous -->
+      <button onclick="saviezVous()" type="button" class="btn">Cliquez pour apprendre quelque chose de nouveau sur la bière!</button>
+      <!-- Texte de bas de page -->
       <footer id="bas_page">
         <p class="text_bas_page">Ludovic Mareemootoo - Matteo Munari - Kelan Solomon</p>
         <p class="text_bas_page">2017 - Sismondi</p>
@@ -94,30 +88,30 @@
 </body>
 
 <script>
-function myFunction() {
-    var facts= [ "les Babyloniens furent les premiers à brasser de la bière", "l'eau est le principal composant de la bière", "il y a constamment 0.7% de la population qui est bourré...", "le pays où on boit le plus de bière est la République Tchèque", "85 à 90% de la bière consommée au Canada est fabriquée au Canada"," un suisse en moyenne boit environ 8,1 litres d'alcool par an, petit joueur!"  ]
+//Fonction le saviezVous
+function saviezVous() {
+    var facts= [ "Les Babyloniens furent les premiers à brasser de la bière", "L'eau est le principal composant de la bière", "Il y a constamment 0.7% de la population qui est bourré", "Le pays où l'on boit le plus de bière est la République Tchèque", "85 à 90% de la bière consommée au Canada est fabriquée au Canada"," Un suisse boit en moyenne environ 8,1 litres d'alcool par an"  ]
     var len = facts.length
     var num = Math.floor((Math.random() * len))
     var x = facts[num]
     alert("Saviez-vous que " + x +" ?");}
+//Fonction vote
+function vote() {
+  alert("Merci d'avoir voté")
+}
 
 </script>
 
 
-
-  <style>
-
-
-
-
-
+<style>
+  /* Section d'informations */
   #informations{
     position: relative; left: 150px;
     display: inline-block;
     width: 85%;
     text-align: center;
   }
-
+  /* CSS de base de toute la page */
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     color: #2c3e50;
@@ -126,10 +120,7 @@ function myFunction() {
     background-repeat: no-repeat;
     background-position: top;
   }
-
-
-
-
+  /* Titre */
   #titre {
     font-family: Segoe;
     text-align: center;
@@ -139,8 +130,7 @@ function myFunction() {
     line-height: 100px;
     padding-top: 50px;
   }
-
-
+  /* Barre de recherche dans l'ensemble */
   form{
     margin-left:auto;
     margin-right:auto;
@@ -149,8 +139,7 @@ function myFunction() {
     border: 5px solid #ccc;
     width: 500px;
   }
-
-
+  /* Barre de recherche, partie gauche */
   #search{
     background-image: url('src/assets/recherche.png');
     font-size: 20px;
@@ -164,7 +153,7 @@ function myFunction() {
     border: none;
     border-radius: 5px 0px 0px 5px;
   }
-
+  /* Barre de recherche, bouton */
   #button{
     background-color: #4CAF50;
     border: none;
@@ -176,45 +165,45 @@ function myFunction() {
     border-radius: 0px 5px 5px 0px;
 
   }
-
-
-
+  /* Logo */
   #logo {
     position: absolute; top: 20px; left: 20px;
     height: 200px ;
   }
-
+  /* Résaux sociaux */
   #resau_sociaux {
     position: fixed; right: 10px; top: 10px;
   }
-
+  /* Icône Instagram */
   #instagram {
     height: 30px;
   }
+  /* Icône Facebook */
   #facebook {
     height: 30px;
   }
+  /* Icône Twitter */
   #twitter {
     height: 30px;
   }
-
+  /* Texte de description */
   #description {
     margin-left: 150px;
     margin-right:auto;
     text-align: center;
   }
-
+  /* Bas de page */
   #bas_page {
     text-align: center;
     background-color: white;
       position: relative; bottom: 0px;
   }
-
+  /* Texte de bas de page */
   .text_bas_page {
     opacity: 0.8;
 
   }
-
+  /* Menu */
   #menu {
     position: absolute; top: 230px;
     width: auto;
@@ -223,21 +212,18 @@ function myFunction() {
     border: none;
     border-radius: 0px 7px 7px 0px;
   }
-
+  /* Titre du menu */
   #menu-titre {
     padding-left: 10px;
     letter-spacing: 3px;
   }
-
+  /* Texte du menu*/
   .menu-text {
     color: black;
   }
+  /* Bouton le saviez-vous */
   .btn {
-      position: absolute;
-      top: 10px;
-      left:450px;
-
-
+    position: absolute; top: 10px; left: 39%;
   }
 
 
